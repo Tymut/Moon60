@@ -1,0 +1,210 @@
+points:
+  key:
+    padding: cy
+    footprints:
+      choc_hotswap:
+        type: choc
+        nets:
+          from: =column_net
+          to: GND
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
+      mx_hotswap:
+        type: mx
+        anchor:
+          rotate: 180
+        nets:
+          from: =column_net
+          to: GND
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
+      diode:
+        type: diode
+        nets:
+          from: =colrow
+          to: =row_net
+        anchor:
+          shift: [0, -5]
+  zones:
+    matrix:
+      key:
+        tags:
+          1u: true
+      key.padding: cy
+      columns:
+        outerpinkie:
+        pinkie:
+        ring:
+          stagger: 7
+        middle:
+          stagger: 7
+        index:
+          stagger: -7
+        far:
+          stagger: -7
+      rows:
+        bottom:
+          bind: [2,2]
+        middle:
+          bind: [2,2]
+        home:
+          bind: [2,2]
+        top:
+          bind: [2,2]
+    thumbfan:
+      anchor:
+        ref: matrix_index_top
+        shift: [-25,-80]
+      columns:
+        first:
+          stagger: 8
+        second:
+        third:
+          stagger: -10
+        fourth:
+          stagger: 7
+          spread: 25
+          rotate: -25
+        fifth:
+          rotate: -25
+          stagger: -5
+          spread: 22
+      rows:
+        bottom:
+outlines:
+  exports:
+    raw_0:
+      - type: keys
+        side: left
+        size: [1cx,1cx]
+    raw:
+      - type: keys
+        side: left
+        size: [1cx, 1cx]
+      - type: rectangle
+        size: [40, 62]
+        anchor:
+          ref: matrix_far_bottom
+    frame:
+      - type: polygon
+        points:
+          - ref: matrix_outerpinkie_top
+            shift: [-6,6]
+          - ref: matrix_outerpinkie_bottom
+            shift: [20,-6]
+          - ref: thumbfan_first_bottom
+            shift: [-8,-13]
+          - ref: thumbfan_second_bottom
+            shift: [-2,-17]
+          - ref: thumbfan_third_bottom
+            shift: [-6,-15]
+          - ref: thumbfan_fifth_bottom
+            shift: [16,-13]
+          - ref: thumbfan_fifth_bottom
+            shift: [16,13]
+          - ref: matrix_far_middle
+            shift: [34,12]
+          - ref: matrix_far_top
+            shift: [6,6]
+    circle_top:
+      - type: circle
+        radius: 155
+        anchor:
+          ref: matrix_middle_home
+          shift: [5,-124]
+      - type: rectangle
+        size: [350,293]
+        operation: subtract
+        anchor:
+          ref: matrix_middle_home
+          shift: [-150,-280]
+    cutout:
+      - type: outline
+        name: raw
+        fillet: 3
+      - type: outline
+        name: frame
+        operation: add
+      - type: outline
+        name: circle_top
+    switches:
+      main:
+        type: keys
+        side: left
+        size: 14
+        bound: false
+    plate:
+      main:
+        type: outline
+        name: cutout
+      switches:
+        type: outline
+        name: switches
+        operation: subtract
+    pcb:
+      main:
+        type: outline
+        name: cutout
+      sockets:
+        type: outline
+        name: raw_0
+        operation: subtract
+    keycaps_choc:
+      main:
+        type: keys
+        side: left
+        size: [1cx - 0.5, 1cy - 0.5]
+        bound: false
+    keycaps_mx:
+      main:
+        type: keys
+        side: left
+        size: [18,18]
+        bound: false
+
+pcbs:
+  insequor58:
+    outlines:
+      matrix:
+        outline: cutout
+      keycaps:
+        outline: keycaps_preview
+        layer: Eco1.User
+    footprints:
+      promicro:
+        type: promicro
+        anchor:
+          ref: matrix_far_top
+      trrs:
+        type: trrs
+        nets:
+          A: GND
+          B: GND
+          C: P2
+          D: VCC
+        anchor:
+          ref: matrix_far_top
+        params:
+          reverse: true
+          symmetric: true
+      reset:
+        type: button
+        anchor:
+          ref:
+            - matrix_far_home
+          shift: [17, 0]
+          rotate: 270
+        params:
+          variant: 2_pin_th
+        nets:
+          from: GND
+          to: RST
+cases:
+  plate:
+    - type: outline
+      name: plate
+      extrude: 4
