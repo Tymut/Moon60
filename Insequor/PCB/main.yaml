@@ -1,6 +1,14 @@
+# Choc keycaps are 17.5 x 16.5
+# cx = 18
+# cy = 17
+# bind: [up,right,down,left] + rotation
+# bind15u: [5,right,5,left] (optoinal)
+# MX keycaps are 18 x 18
+# U = 19.05
+# u = 19
 points:
   key:
-    padding: cy
+    padding: u
     footprints:
       choc_hotswap:
         type: choc
@@ -34,7 +42,7 @@ points:
       key:
         tags:
           1u: true
-      key.padding: cy
+      key.padding: u
       columns:
         outerpinkie:
         pinkie:
@@ -48,17 +56,13 @@ points:
           stagger: -7
       rows:
         bottom:
-          bind: [2,2]
         middle:
-          bind: [2,2]
         home:
-          bind: [2,2]
         top:
-          bind: [2,2]
     thumbfan:
       anchor:
         ref: matrix_index_top
-        shift: [-25,-80]
+        shift: [-25,-85]
       columns:
         first:
           stagger: 8
@@ -80,79 +84,32 @@ outlines:
     raw_0:
       - type: keys
         side: left
-        size: [1cx,1cx]
+        size: [18,18]
+    promicro_rectangle:
+      - type: rectangle
+        size: [40, 69]
+        anchor:
+          ref: matrix_far_bottom
+    topleftcorner_repair:
+      - type: rectangle
+        size: [20,20]
+        anchor:
+          ref: matrix_outerpinkie_top
+          shift: [-17,-8]
     raw:
       - type: keys
         side: left
         size: [1cx, 1cx]
-      - type: rectangle
-        size: [40, 62]
-        anchor:
-          ref: matrix_far_bottom
-    frame:
-      - type: polygon
-        points:
-          - ref: matrix_outerpinkie_top
-            shift: [-6,6]
-          - ref: matrix_outerpinkie_bottom
-            shift: [20,-6]
-          - ref: thumbfan_first_bottom
-            shift: [-8,-13]
-          - ref: thumbfan_second_bottom
-            shift: [-2,-17]
-          - ref: thumbfan_third_bottom
-            shift: [-6,-15]
-          - ref: thumbfan_fifth_bottom
-            shift: [16,-13]
-          - ref: thumbfan_fifth_bottom
-            shift: [16,13]
-          - ref: matrix_far_middle
-            shift: [34,12]
-          - ref: matrix_far_top
-            shift: [6,6]
-    circle_top:
-      - type: circle
-        radius: 155
-        anchor:
-          ref: matrix_middle_home
-          shift: [5,-124]
-      - type: rectangle
-        size: [350,293]
-        operation: subtract
-        anchor:
-          ref: matrix_middle_home
-          shift: [-150,-280]
-    cutout:
       - type: outline
-        name: raw
-        fillet: 3
+        name: promicro_rectangle
       - type: outline
-        name: frame
-        operation: add
-      - type: outline
-        name: circle_top
-    switches:
+        name: topleftcorner_repair
+    switches_slots:
       main:
         type: keys
         side: left
         size: 14
         bound: false
-    plate:
-      main:
-        type: outline
-        name: cutout
-      switches:
-        type: outline
-        name: switches
-        operation: subtract
-    pcb:
-      main:
-        type: outline
-        name: cutout
-      sockets:
-        type: outline
-        name: raw_0
-        operation: subtract
     keycaps_choc:
       main:
         type: keys
@@ -165,7 +122,80 @@ outlines:
         side: left
         size: [18,18]
         bound: false
-
+    circle_top:
+      - type: circle
+        radius: 153.1
+        anchor:
+          ref: matrix_middle_home
+          shift: [2,-116]
+      - type: rectangle
+        size: [360,295.6]
+        operation: subtract
+        anchor:
+          ref: matrix_middle_home
+          shift: [-152,-278.6]
+    frame:
+      - type: polygon
+        points:
+          - ref: matrix_outerpinkie_top
+            shift: [-17,12]
+          - ref: matrix_outerpinkie_bottom
+            shift: [-17,-17]
+          - ref: matrix_pinkie_bottom
+            shift: [0,-17]
+          - ref: thumbfan_first_bottom
+            shift: [-12,-17]
+          - ref: thumbfan_second_bottom
+            shift: [-2,-17]
+          - ref: thumbfan_third_bottom
+            shift: [-13,-17]
+          - ref: thumbfan_third_bottom
+            shift: [28,-17]
+          - ref: thumbfan_fifth_bottom
+            shift: [18,-17]
+          - ref: thumbfan_fifth_bottom
+            shift: [18,17]
+          - ref: matrix_far_middle
+            shift: [43,-25]
+          - ref: matrix_far_top
+            shift: [6,12]
+    frame_fillet:
+      - type: outline
+        name: frame
+        fillet: 7
+    cutout:
+      - type: outline
+        name: raw
+      - type: outline
+        name: frame_fillet
+        operation: add
+      - type: outline
+        name: circle_top
+    plate:
+      main:
+        type: outline
+        name: cutout
+      switches:
+        type: outline
+        name: switches_slots
+        operation: subtract
+    plate_with_keycaps:
+      main:
+        type: outline
+        name: cutout
+      keycaps:
+        type: keys
+        side: left
+        size: [18,18]
+        operation: subtract
+    pcb:
+      main:
+        type: outline
+        name: cutout
+      sockets:
+        type: outline
+        name: raw_0
+        operation: subtract
 pcbs:
   insequor58:
     outlines:
