@@ -1,8 +1,6 @@
 # Choc keycaps are 17.5 x 16.5
 # cx = 18
 # cy = 17
-# bind: [up,right,down,left] + rotation
-# bind15u: [5,right,5,left] (optoinal)
 # MX keycaps are 18 x 18
 # U = 19.05
 # u = 19
@@ -36,7 +34,7 @@ points:
           from: =colrow
           to: =row_net
         anchor:
-          shift: [0, -5]
+          shift: [0, -9]
   zones:
     matrix:
       key:
@@ -246,7 +244,7 @@ pcbs:
           orientation: up
         anchor:
           ref: matrix_far_top
-          shift: [20,-11]
+          shift: [20,-8]
           rotate: 270
       mcu_r:
         type: promicro
@@ -254,7 +252,7 @@ pcbs:
           orientation: down
         anchor:
           ref: matrix_far_top
-          shift: [22.5,-12.25]
+          shift: [22.5,-9.25]
           rotate: 270
       trrs_l:
         type: trrs
@@ -265,10 +263,10 @@ pcbs:
           D: VCC
         anchor:
           ref: matrix_far_top
-          shift: [54,-5]
+          shift: [38,8]
         params:
           reverse: false
-          symmetric: false
+          symmetric: true
       trrs_r:
         type: trrs
         nets:
@@ -278,19 +276,24 @@ pcbs:
           D: VCC
         anchor:
           ref: matrix_far_top
-          shift: [54,-7]
+          shift: [38,8]
         params:
           reverse: true
-          symmetric: false
+          symmetric: true
       reset:
         type: button
         anchor:
           ref:
             - matrix_far_home
-          shift: [30, 0]
+          shift: [35,9]
           rotate: 270
         params:
           variant: 2_pin_th
         nets:
           from: GND
           to: RST
+cases:
+  plate:
+    - type: outline
+      name: plate
+      extrude: 3
