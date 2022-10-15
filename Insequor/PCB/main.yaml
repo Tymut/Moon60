@@ -45,40 +45,67 @@ points:
       key.padding: u
       columns:
         outerpinkie:
+          key:
+            column_net: P21
         pinkie:
+          key:
+            column_net: P20
         ring:
+          key:
+            column_net: P19
           stagger: 7
         middle:
+          key:
+            column_net: P18
           stagger: 7
         index:
+          key:
+            column_net: P15
           stagger: -7
         far:
+          key:
+            column_net: P14
           stagger: -7
       rows:
         bottom:
+          row_net: P6
         middle:
+          row_net: P5
         home:
+          row_net: P4
         top:
+          row_net: P3
     thumbfan:
       anchor:
         ref: matrix_index_top
         shift: [-25,-85]
       columns:
         first:
+          key:
+            column_net: P20
           stagger: 8
         second:
+          key:
+            column_net: P19
         third:
+          key:
+            column_net: P18
           stagger: -10
         fourth:
+          key:
+            column_net: P15
           stagger: 7
           spread: 25
           rotate: -25
         fifth:
+          key:
+            column_net: P14
           rotate: -25
           stagger: -5
           spread: 22
       rows:
         bottom:
+          row_net: P7
 outlines:
   exports:
     raw_0:
@@ -197,19 +224,39 @@ outlines:
         name: raw_0
         operation: subtract
 pcbs:
+  top_plate:
+    outlines:
+      matrix:
+        outline: plate
+        layer: Edge.Cuts
   insequor58:
     outlines:
       matrix:
         outline: cutout
-      keycaps:
-        outline: keycaps_preview
+      keycaps_mx:
+        outline: keycaps_mx
         layer: Eco1.User
+      keycaps_choc:
+        outline: keycaps_choc
+        layer: Eco2.User
     footprints:
-      promicro:
+      mcu_l:
         type: promicro
+        params:
+          orientation: up
         anchor:
           ref: matrix_far_top
-      trrs:
+          shift: [20,-11]
+          rotate: 270
+      mcu_r:
+        type: promicro
+        params:
+          orientation: down
+        anchor:
+          ref: matrix_far_top
+          shift: [22.5,-12.25]
+          rotate: 270
+      trrs_l:
         type: trrs
         nets:
           A: GND
@@ -218,23 +265,32 @@ pcbs:
           D: VCC
         anchor:
           ref: matrix_far_top
+          shift: [54,-5]
+        params:
+          reverse: false
+          symmetric: false
+      trrs_r:
+        type: trrs
+        nets:
+          A: GND
+          B: GND
+          C: P2
+          D: VCC
+        anchor:
+          ref: matrix_far_top
+          shift: [54,-7]
         params:
           reverse: true
-          symmetric: true
+          symmetric: false
       reset:
         type: button
         anchor:
           ref:
             - matrix_far_home
-          shift: [17, 0]
+          shift: [30, 0]
           rotate: 270
         params:
           variant: 2_pin_th
         nets:
           from: GND
           to: RST
-cases:
-  plate:
-    - type: outline
-      name: plate
-      extrude: 4
