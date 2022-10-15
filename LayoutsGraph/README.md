@@ -15,3 +15,5 @@
 - "firstIdea" - this folder contains the first ideas related to the exterior of the keyboard.
 - "mainIdea" - This folder contains the main ideas related to the exterior and functionality of the keyboard, which have been validated and serve as a reference for further work.
 - "3D" - this folder contains three-dimensional renders of the main ideas that have been modified for the final appearance of the keyboard.
+
+## - Noodle / Tymut
