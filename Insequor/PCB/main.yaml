@@ -1,9 +1,11 @@
-# Choc keycaps are 17.5 x 16.5
-# cx = 18
-# cy = 17
-# MX keycaps are 18 x 18
-# U = 19.05
-# u = 19
+# Definicje:
+  # Choc keycaps = 17.5 x 16.5
+  # cx = 18
+  # cy = 17
+  # MX keycaps = 18 x 18
+  # U = 19.05
+  # u = 19
+  # Jednostki podawane są w milimetrach
 points:
   key:
     padding: u
@@ -88,11 +90,11 @@ points:
         third:
           key:
             column_net: P18
-          stagger: -10
+          stagger: -7
         fourth:
           key:
             column_net: P15
-          stagger: 7
+          stagger: 4
           spread: 25
           rotate: -25
         fifth:
@@ -105,6 +107,7 @@ points:
         bottom:
           row_net: P7
 outlines:
+  # TODO: Dodać screw_holes i mounting_holes
   exports:
     raw_0:
       - type: keys
@@ -112,9 +115,16 @@ outlines:
         size: [18,18]
     promicro_rectangle:
       - type: rectangle
-        size: [40, 69]
+        size: [46, 80]
         anchor:
           ref: matrix_far_bottom
+          shift: [0,-11]
+    promicro_platecut:
+      - type: rectangle
+        size: [26, 57]
+        anchor:
+          ref: matrix_far_bottom
+          shift: [12,10]
     topleftcorner_repair:
       - type: rectangle
         size: [20,20]
@@ -133,7 +143,7 @@ outlines:
       main:
         type: keys
         side: left
-        size: 14
+        size: 15
         bound: false
     keycaps_choc:
       main:
@@ -149,16 +159,16 @@ outlines:
         bound: false
     circle_top:
       - type: circle
-        radius: 153.1
+        radius: 154.68
         anchor:
           ref: matrix_middle_home
-          shift: [2,-116]
+          shift: [5,-116]
       - type: rectangle
-        size: [360,295.6]
+        size: [370,295.6]
         operation: subtract
         anchor:
           ref: matrix_middle_home
-          shift: [-152,-278.6]
+          shift: [-160,-278.6]
     frame:
       - type: polygon
         points:
@@ -196,6 +206,7 @@ outlines:
         operation: add
       - type: outline
         name: circle_top
+  # TODO: Dodać wycięcie na enkoder
     plate:
       main:
         type: outline
@@ -203,6 +214,10 @@ outlines:
       switches:
         type: outline
         name: switches_slots
+        operation: subtract
+      cut:
+        type: outline
+        name: promicro_platecut
         operation: subtract
     plate_with_keycaps:
       main:
@@ -213,6 +228,10 @@ outlines:
         side: left
         size: [18,18]
         operation: subtract
+      cut:
+        type: outline
+        name: promicro_platecut
+        operation: subtract
     pcb:
       main:
         type: outline
@@ -222,6 +241,10 @@ outlines:
         name: raw_0
         operation: subtract
 pcbs:
+ # TODO: Dodać footprint enkodera
+ # TODO: Dodać footprint oledu (kicad albo yaml)
+ # TODO: Dodać footprinty via
+ # TODO: Przystosować PCB do pracy wireless
   top_plate:
     outlines:
       matrix:
