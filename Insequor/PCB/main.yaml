@@ -107,7 +107,6 @@ points:
         bottom:
           row_net: P7
 outlines:
-  # TODO: Dodać screw_holes i mounting_holes
   exports:
     raw_0:
       - type: keys
@@ -131,6 +130,50 @@ outlines:
         anchor:
           ref: matrix_outerpinkie_top
           shift: [-17,-8]
+    screw_holes:
+      top_left:
+        type: circle
+        anchor:
+          - ref: matrix_outerpinkie_top
+            shift: [9.5,-9.5]
+        radius: 1.05
+      bottom_left:
+        type: circle
+        anchor:
+          - ref: matrix_outerpinkie_bottom
+            shift: [9.5,9.5]
+        radius: 1.05
+      bottom_right:
+        type: circle
+        anchor:
+          - ref: matrix_far_bottom
+            shift: [9.5,9.5]
+        radius: 1.05
+      top_right:
+        type: circle
+        anchor:
+          - ref: matrix_far_top
+            shift: [9.5,-9.5]
+        radius: 1.05
+      addon_outer:
+        type: circle
+        anchor:
+          - ref: thumbfan_fourth_bottom
+            shift: [13.5,9.5]
+        radius: 1.05
+    # TODO: Sprawdzić mounting_holes na 3mm
+    mounting_holes:
+      $extends: outlines.exports.screw_holes
+      top_left:
+        radius: 2.5
+      bottom_left:
+        radius: 2.5
+      bottom_right:
+        radius: 2.5
+      top_right:
+        radius: 2.5
+      addon_outer:
+        radius: 2.5
     raw:
       - type: keys
         side: left
@@ -143,7 +186,7 @@ outlines:
       main:
         type: keys
         side: left
-        size: 15
+        size: 14
         bound: false
     keycaps_choc:
       main:
@@ -206,7 +249,6 @@ outlines:
         operation: add
       - type: outline
         name: circle_top
-  # TODO: Dodać wycięcie na enkoder
     plate:
       main:
         type: outline
@@ -240,10 +282,13 @@ outlines:
         type: outline
         name: raw_0
         operation: subtract
+      mounting_holes:
+        type: outline
+        name: mounting_holes
+        operation: subtract
 pcbs:
  # TODO: Dodać footprint enkodera
  # TODO: Dodać footprint oledu (kicad albo yaml)
- # TODO: Dodać footprinty via
  # TODO: Przystosować PCB do pracy wireless
   top_plate:
     outlines:
@@ -260,6 +305,8 @@ pcbs:
       keycaps_choc:
         outline: keycaps_choc
         layer: Eco2.User
+      mounting_holes:
+        outline: mounting_holes
     footprints:
       mcu_l:
         type: promicro
@@ -315,6 +362,92 @@ pcbs:
         nets:
           from: GND
           to: RST
+      slider:
+        type: slider
+        anchor:
+          ref: matrix_far_home
+          shift: [35,2]
+        nets:
+          from: pos
+          to: RAW
+      via3:
+        type: via
+        anchor:
+          ref: thumbfan_fourth_bottom
+          shift: [15,5]
+        nets:
+          net: RAW
+      via4:
+        type: via
+        anchor:
+          ref: thumbfan_third_bottom
+          shift: [15,5]
+        nets:
+          net: GND
+      via5:
+        type: via
+        anchor:
+          ref: matrix_index_bottom
+          shift: [15,5]
+        nets:
+          net: pos
+      via:
+        type: via
+        anchor:
+          ref: matrix_far_home
+          shift: [15,5]
+        nets:
+          net: RST
+      bat_plus:
+        type: pad
+        anchor:
+          ref: matrix_far_top
+          shift: [22.5,-9.25]
+          rotate: 0
+        params:
+          front: true
+          back: true
+          width: 1.5
+          height: 1.5
+          text: "B+"
+        nets:
+          net: Bplus
+      bat_minus:
+        type: pad
+        anchor:
+          ref: matrix_far_top
+          shift: [22.5,-6.25]
+          rotate: 0
+        params:
+          front: true
+          back: true
+          width: 1.5
+          height: 1.5
+          text: "B-"
+        nets:
+          net: GND
+      jumper_l:
+        type: jumper
+        anchor:
+          ref: matrix_far_home
+          shift: [38,-2]
+          rotate: 270
+        params:
+          side: B
+        nets:
+          from: Bplus
+          to: RAW
+      jumper_r:
+        type: jumper
+        anchor:
+          ref: matrix_far_home
+          shift: [38,-2]
+          rotate: 270
+        params:
+          side: F
+        nets:
+          from: Bplus
+          to: RAW
 cases:
   plate:
     - type: outline
