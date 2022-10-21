@@ -161,7 +161,6 @@ outlines:
           - ref: thumbfan_fourth_bottom
             shift: [13.5,9.5]
         radius: 1.05
-    # TODO: Sprawdzić mounting_holes na 3mm
     mounting_holes:
       $extends: outlines.exports.screw_holes
       top_left:
@@ -173,6 +172,83 @@ outlines:
       top_right:
         radius: 2.5
       addon_outer:
+        radius: 2.5
+    screw_holesTOPMOUNT:
+      top_left:
+        type: circle
+        anchor:
+          - ref: matrix_outerpinkie_top
+            shift: [9.5,-9.5]
+        radius: 1.05
+      bottom_left:
+        type: circle
+        anchor:
+          - ref: matrix_outerpinkie_bottom
+            shift: [9.5,9.5]
+        radius: 1.05
+      bottom_leftMiddle:
+        type: circle
+        anchor:
+          - ref: matrix_pinkie_bottom
+            shift: [9.5,9.5]
+        radius: 1.05
+      bottom_rightMiddle:
+        type: circle
+        anchor:
+          - ref: matrix_index_bottom
+            shift: [9.5,9.5]
+        radius: 1.05
+      bottom_right:
+        type: circle
+        anchor:
+          - ref: thumbfan_fifth_bottom
+            shift: [9.5,9.5]
+        radius: 1.05
+      bottom_rightOuter:
+        type: circle
+        anchor:
+          - ref: thumbfan_fifth_bottom
+            shift: [9.5,9.5]
+        radius: 1.05
+      top_right:
+        type: circle
+        anchor:
+          - ref: matrix_far_top
+            shift: [9.5,-9.5]
+        radius: 1.05
+      top_rightMiddle:
+        type: circle
+        anchor:
+          - ref: matrix_index_top
+            shift: [9.5,9.5]
+        radius: 1.05
+      top_leftMiddle:
+        type: circle
+        anchor:
+          - ref: matrix_ring_top
+            shift: [9.5,9.5]
+        radius: 1.05
+    # TODO: Sprawdzić mounting_holes na 3mm
+    # TODO: Zrobić wersję top_mount plate i PCB
+    mounting_holesTOPMOUNT:
+      $extends: outlines.exports.screw_holes
+      top_left:
+        radius: 2.5
+      bottom_left:
+        radius: 2.5
+      bottom_leftMiddle:
+        radius: 2.5
+      bottom_rightMiddle:
+        radius: 2.5
+      bottom_right:
+        radius: 2.5
+      bottom_rightOuter:
+        radius: 2.5
+      top_right:
+        radius: 2.5
+      top_rightMiddle:
+        radius: 2.5
+      top_leftMiddle:
         radius: 2.5
     raw:
       - type: keys
