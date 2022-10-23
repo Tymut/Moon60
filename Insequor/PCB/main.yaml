@@ -118,6 +118,12 @@ outlines:
         anchor:
           ref: matrix_far_bottom
           shift: [0,-11]
+    promicro_platecutOLD:
+      - type: rectangle
+        size: [26, 57]
+        anchor:
+          ref: matrix_far_bottom
+          shift: [12,10]
     promicro_platecut:
       - type: rectangle
         size: [29, 40]
