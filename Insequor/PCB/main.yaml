@@ -120,10 +120,15 @@ outlines:
           shift: [0,-11]
     promicro_platecut:
       - type: rectangle
-        size: [26, 57]
+        size: [29, 40]
         anchor:
           ref: matrix_far_bottom
-          shift: [12,10]
+          shift: [10.5,27]
+      - type: rectangle
+        size: [10,35]
+        anchor:
+          ref: matrix_far_bottom
+          shift: [37,27]
     topleftcorner_repair:
       - type: rectangle
         size: [20,20]
@@ -214,7 +219,7 @@ outlines:
         type: circle
         anchor:
           - ref: matrix_far_top
-            shift: [41.9,9]
+            shift: [42,9]
         radius: 1.05
       top_rightMiddle:
         type: circle
