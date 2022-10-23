@@ -6,7 +6,7 @@
   # U = 19.05
   # u = 19
   # Jednostki podawane są w milimetrach
-points:
+points:                 # points - określa pozycjonowanie slotów na switche
   key:
     padding: u
     footprints:
@@ -106,7 +106,7 @@ points:
       rows:
         bottom:
           row_net: P7
-outlines:
+outlines:                 # outlines - określa krawędzie układu scalonegoo
   exports:
     raw_0:
       - type: keys
@@ -271,7 +271,7 @@ outlines:
       main:
         type: keys
         side: left
-        size: 14
+        size: 14.1
         bound: false
     keycaps_choc:
       main:
@@ -403,7 +403,7 @@ outlines:
         type: outline
         name: mounting_holesTOPMOUNT
         operation: subtract
-pcbs:
+pcbs:                 # pcbs - określa konfigurację która ma być przekonwertowana do programu KiCad
   plateTRAY:
     outlines:
       matrix:
@@ -696,7 +696,7 @@ pcbs:
         nets:
           from: Bplus
           to: RAW
-cases:
+cases:                 # cases - określa konfigurację plików .stl
   plateTRAY:
     - type: outline
       name: plate_TRAYMOUNT
