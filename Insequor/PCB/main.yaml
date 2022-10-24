@@ -318,8 +318,8 @@ outlines:                 # outlines - określa krawędzie układu scalonegoo
             shift: [18,-17]
           - ref: thumbfan_fifth_bottom
             shift: [18,17]
-          - ref: matrix_far_middle
-            shift: [43,-25]
+          - ref: matrix_far_bottom
+            shift: [39,0]
           - ref: matrix_far_top
             shift: [6,12]
     frame_fillet:
