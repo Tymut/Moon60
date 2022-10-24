@@ -509,7 +509,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: pad
         anchor:
           ref: matrix_far_top
-          shift: [22.5,-9.25]
+          shift: [22.5,-15.25]
           rotate: 0
         params:
           front: true
@@ -523,7 +523,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: pad
         anchor:
           ref: matrix_far_top
-          shift: [22.5,-6.25]
+          shift: [22.5,-12.25]
           rotate: 0
         params:
           front: true
@@ -650,7 +650,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: pad
         anchor:
           ref: matrix_far_top
-          shift: [22.5,-9.25]
+          shift: [22.5,-12.25]
           rotate: 0
         params:
           front: true
@@ -664,7 +664,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: pad
         anchor:
           ref: matrix_far_top
-          shift: [22.5,-6.25]
+          shift: [22.5,-15.25]
           rotate: 0
         params:
           front: true
