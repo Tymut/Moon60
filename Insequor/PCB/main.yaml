@@ -189,37 +189,37 @@ outlines:                 # outlines - określa krawędzie układu scalonegoo
         type: circle
         anchor:
           - ref: matrix_outerpinkie_top
-            shift: [-12,9]
+            shift: [-12.5,9]
         radius: 1.05
       bottom_left:
         type: circle
         anchor:
           - ref: matrix_outerpinkie_bottom
-            shift: [-12,-11]
+            shift: [-12.5,-11]
         radius: 1.05
       bottom_leftMiddle:
         type: circle
         anchor:
           - ref: thumbfan_first_bottom
-            shift: [-10.5,-12]
+            shift: [-11,-12.5]
         radius: 1.05
       bottom_rightMiddle:
         type: circle
         anchor:
           - ref: thumbfan_third_bottom
-            shift: [-10.5,-12]
+            shift: [-11,-12.5]
         radius: 1.05
       bottom_right:
         type: circle
         anchor:
           - ref: thumbfan_fifth_bottom
-            shift: [12,-10]
+            shift: [12.5,-11.5]
         radius: 1.05
       bottom_rightOuter:
         type: circle
         anchor:
           - ref: thumbfan_fifth_bottom
-            shift: [12,11]
+            shift: [12.5,11.5]
         radius: 1.05
       top_right:
         type: circle
@@ -313,15 +313,16 @@ outlines:                 # outlines - określa krawędzie układu scalonegoo
           - ref: thumbfan_third_bottom
             shift: [-13,-17]
           - ref: thumbfan_third_bottom
-            shift: [28,-17]
-          - ref: thumbfan_fifth_bottom
-            shift: [18,-17]
-          - ref: thumbfan_fifth_bottom
-            shift: [18,17]
+            shift: [29,-17]
           - ref: matrix_far_bottom
-            shift: [39,0]
+            shift: [46,-13]
           - ref: matrix_far_top
-            shift: [6,12]
+            shift: [46,12]
+      - type: rectangle
+        size: [30,36]
+        anchor:
+          ref: thumbfan_fifth_bottom
+          shift: [-10,-18]
     frame_fillet:
       - type: outline
         name: frame
@@ -403,7 +404,32 @@ outlines:                 # outlines - określa krawędzie układu scalonegoo
         type: outline
         name: mounting_holesTOPMOUNT
         operation: subtract
+    pcb_help:
+      main:
+        type: outline
+        name: frame
+      sockets:
+        type: outline
+        name: raw_0
+        operation: subtract
+      top:
+        type: outline
+        name: circle_top
 pcbs:                 # pcbs - określa konfigurację która ma być przekonwertowana do programu KiCad
+  sizing_help:
+    outlines:
+      top:
+        outline: circle_top
+      matrix:
+        outline: frame
+      keycaps_mx:
+        outline: keycaps_mx
+        layer: Eco1.User
+      keycaps_choc:
+        outline: keycaps_choc
+        layer: Eco2.User
+      mounting_holes:
+        outline: mounting_holesTOPMOUNT
   plateTRAY:
     outlines:
       matrix:
@@ -509,7 +535,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: pad
         anchor:
           ref: matrix_far_top
-          shift: [22.5,-15.25]
+          shift: [22.5,-9.25]
           rotate: 0
         params:
           front: true
@@ -523,7 +549,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: pad
         anchor:
           ref: matrix_far_top
-          shift: [22.5,-12.25]
+          shift: [22.5,-6.25]
           rotate: 0
         params:
           front: true
