@@ -347,10 +347,10 @@ outlines:                 # outlines - określa krawędzie układu scalonegoo
         type: outline
         name: promicro_platecut
         operation: subtract
-      screw_holes:
-        type: outline
-        name: screw_holesTRAYMOUNT
-        operation: subtract
+    # screw_holes:
+    #   type: outline
+    #   name: screw_holesTRAYMOUNT
+    #   operation: subtract
     plate_TOPMOUNT:
       main:
         type: outline
