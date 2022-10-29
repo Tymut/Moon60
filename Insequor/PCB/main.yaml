@@ -82,20 +82,25 @@ points:                 # points - określa pozycjonowanie slotów na switche
       columns:
         first:
           key:
-            column_net: P20
+            column_net: P21
           stagger: 8
         second:
           key:
-            column_net: P19
+            column_net: P20
         third:
           key:
-            column_net: P18
+            column_net: P19
           stagger: -7
+        addon:
+          key:
+            column_net: P18
+          stagger: 35
+          spread: 25
         fourth:
           key:
             column_net: P15
-          stagger: 4
-          spread: 25
+          stagger: -30
+          spread: 0
           rotate: -25
         fifth:
           key:
@@ -129,7 +134,7 @@ outlines:                 # outlines - określa krawędzie układu scalonegoo
         size: [40, 60]
         anchor:
           ref: matrix_far_bottom
-          shift: [10.5,27]
+          shift: [10.5,25.5]
     topleftcorner_repair:
       - type: rectangle
         size: [20,20]
@@ -454,7 +459,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           orientation: up
         anchor:
           ref: matrix_far_top
-          shift: [20,-5]
+          shift: [20,-2]
           rotate: 270
       mcu_r:
         type: promicro
@@ -462,7 +467,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           orientation: down
         anchor:
           ref: matrix_far_top
-          shift: [22.5,-6.25]
+          shift: [22.5,-3.25]
           rotate: 270
       trrs:
         type: trrs
@@ -473,7 +478,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           D: VCC
         anchor:
           ref: matrix_far_top
-          shift: [38,6]
+          shift: [38,9]
         params:
           reverse: true
           symmetric: true
@@ -482,7 +487,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         anchor:
           ref:
             - matrix_far_home
-          shift: [42,7]
+          shift: [42,10]
           rotate: 270
         params:
           variant: 2_pin_th
@@ -493,7 +498,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: slider
         anchor:
           ref: matrix_far_home
-          shift: [42,2]
+          shift: [42,0.5]
           rotate: -90
         nets:
           from: pos
@@ -530,8 +535,8 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: pad
         anchor:
           ref: matrix_far_top
-          shift: [21,-11.25]
-          rotate: 0
+          shift: [21,-8.25]
+          rotate: 90
         params:
           front: true
           back: true
@@ -544,8 +549,8 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: pad
         anchor:
           ref: matrix_far_top
-          shift: [24,-11.25]
-          rotate: 0
+          shift: [24,-8.25]
+          rotate: 90
         params:
           front: true
           back: true
@@ -558,7 +563,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: jumper
         anchor:
           ref: matrix_far_home
-          shift: [35,6]
+          shift: [35,9]
           rotate: 270
         params:
           side: B
@@ -569,7 +574,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: jumper
         anchor:
           ref: matrix_far_home
-          shift: [35,6]
+          shift: [35,9]
           rotate: 270
         params:
           side: F
@@ -595,7 +600,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           orientation: up
         anchor:
           ref: matrix_far_top
-          shift: [20,-5]
+          shift: [20,-2]
           rotate: 270
       mcu_r:
         type: promicro
@@ -603,7 +608,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           orientation: down
         anchor:
           ref: matrix_far_top
-          shift: [22.5,-6.25]
+          shift: [22.5,-3.25]
           rotate: 270
       trrs:
         type: trrs
@@ -614,7 +619,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           D: VCC
         anchor:
           ref: matrix_far_top
-          shift: [38,6]
+          shift: [38,9]
         params:
           reverse: true
           symmetric: true
@@ -623,7 +628,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         anchor:
           ref:
             - matrix_far_home
-          shift: [42,7]
+          shift: [42,10]
           rotate: 270
         params:
           variant: 2_pin_th
@@ -634,7 +639,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: slider
         anchor:
           ref: matrix_far_home
-          shift: [42,2]
+          shift: [42,0.5]
           rotate: -90
         nets:
           from: pos
@@ -671,8 +676,8 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: pad
         anchor:
           ref: matrix_far_top
-          shift: [21,-11.25]
-          rotate: 0
+          shift: [21,-8.25]
+          rotate: 90
         params:
           front: true
           back: true
@@ -685,8 +690,8 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: pad
         anchor:
           ref: matrix_far_top
-          shift: [24,-11.25]
-          rotate: 0
+          shift: [24,-8.25]
+          rotate: 90
         params:
           front: true
           back: true
@@ -699,7 +704,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: jumper
         anchor:
           ref: matrix_far_home
-          shift: [35,6]
+          shift: [35,9]
           rotate: 270
         params:
           side: B
@@ -710,7 +715,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         type: jumper
         anchor:
           ref: matrix_far_home
-          shift: [35,6]
+          shift: [35,9]
           rotate: 270
         params:
           side: F
