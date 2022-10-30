@@ -12,20 +12,20 @@ points:                 # points - określa pozycjonowanie slotów na switche
     footprints:
       choc_hotswap:
         type: choc
+        anchor:
+          rotate: 180
         nets:
           from: =column_net
-          to: GND
+          to: =row_net
         params:
           keycaps: true
           reverse: true
           hotswap: true
       mx_hotswap:
         type: mx
-        anchor:
-          rotate: 180
         nets:
-          from: =column_net
-          to: GND
+          from: =row_net
+          to: =column_net
         params:
           keycaps: true
           reverse: true
