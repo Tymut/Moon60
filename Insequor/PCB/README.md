@@ -11,3 +11,5 @@
 - The board was written and interpreted in YAML - main.yaml.
 - The PCB is designed in KiCad
 - There are configuration files for KiCad in the KiCad folder.
+
+## - Noodle / Tymut
