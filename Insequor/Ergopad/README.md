@@ -1,4 +1,4 @@
-## PL :
+# PL
 
 - Zawartość tego folderu jest zbiorem danych biometrycznych dłoni wybranych osób.
 - Dane mają na celu stworzyć uśredniony schemat klawiatury.
@@ -7,7 +7,7 @@
 - Kolejnym krokiem po uśrednieniu wyników jest zaprojektowanie layoutu PCB oraz obudowy klawiatury w aplikacji Ergogen (https://ergogen.xyz/).
 - Uśredniony wynik danych biometrycznych znajduje się w podfolderze "Result".
 
-## ENG : 
+## ENG
 
 - The content of this folder is a collection of biometric data of the hands of selected people.
 - The data is intended to create an average keyboard diagram.
