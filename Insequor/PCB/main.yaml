@@ -68,13 +68,13 @@ points:                 # points - określa pozycjonowanie slotów na switche
           stagger: -7
       rows:
         bottom:
-          row_net: P6
+          row_net: P7
         middle:
-          row_net: P5
+          row_net: P6
         home:
-          row_net: P4
+          row_net: P5
         top:
-          row_net: P3
+          row_net: P4
     thumbfan:
       anchor:
         ref: matrix_index_top
@@ -110,7 +110,7 @@ points:                 # points - określa pozycjonowanie slotów na switche
           spread: 22
       rows:
         bottom:
-          row_net: P7
+          row_net: P8
 outlines:                 # outlines - określa krawędzie układu scalonegoo
   exports:
     raw_0:
