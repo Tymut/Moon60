@@ -1,4 +1,4 @@
-#include "insequor58.h"
+#include "moon60.h"
 
 #ifdef SWAP_HANDS_ENABLE
 __attribute__ ((weak))

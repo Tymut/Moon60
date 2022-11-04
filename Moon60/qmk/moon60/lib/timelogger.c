@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "timer.h"
-#include "insequor58.h"
+#include "moon60.h"
 
 char timelog_str[24] = {};
 int last_time = 0;

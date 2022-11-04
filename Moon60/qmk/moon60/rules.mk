@@ -20,6 +20,6 @@ AUDIO_ENABLE = no           # Audio output
 # if firmware size over limit, try this option
 # LTO_ENABLE = yes
 
-DEFAULT_FOLDER = crkbd/rev1
+DEFAULT_FOLDER = 
 
 LAYOUTS = 

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
-#include "insequor58.h"
+#include "moon60.h"
 
 char mode_icon[24];
 

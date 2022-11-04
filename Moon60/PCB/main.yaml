@@ -1,3 +1,5 @@
+# Wykonał: Przemek Paciorek
+# Na płytce zostały zdefiniowane komponenty pozwalające na pracę przewodową i bezprzewodową.
 # Definicje:
   # Choc keycaps = 17.5 x 16.5
   # cx = 18
@@ -440,7 +442,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
       matrix:
         outline: plate_TOPMOUNT
         layer: Edge.Cuts
-  insequor58tray:
+  moon60Tray:
     outlines:
       matrix:
         outline: cutout
@@ -503,34 +505,6 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         nets:
           from: pos
           to: RAW
-      via3:
-        type: via
-        anchor:
-          ref: thumbfan_fourth_bottom
-          shift: [15,5]
-        nets:
-          net: RAW
-      via4:
-        type: via
-        anchor:
-          ref: thumbfan_third_bottom
-          shift: [15,5]
-        nets:
-          net: GND
-      via5:
-        type: via
-        anchor:
-          ref: matrix_index_bottom
-          shift: [15,5]
-        nets:
-          net: pos
-      via:
-        type: via
-        anchor:
-          ref: matrix_index_home
-          shift: [15,5]
-        nets:
-          net: RST
       bat_plus:
         type: pad
         anchor:
@@ -581,7 +555,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         nets:
           from: Bplus
           to: RAW
-  insequor58top:
+  moon60Top:
     outlines:
       matrix:
         outline: cutout
@@ -644,34 +618,6 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         nets:
           from: pos
           to: RAW
-      via3:
-        type: via
-        anchor:
-          ref: thumbfan_fourth_bottom
-          shift: [15,5]
-        nets:
-          net: RAW
-      via4:
-        type: via
-        anchor:
-          ref: thumbfan_third_bottom
-          shift: [15,5]
-        nets:
-          net: GND
-      via5:
-        type: via
-        anchor:
-          ref: matrix_index_bottom
-          shift: [15,5]
-        nets:
-          net: pos
-      via:
-        type: via
-        anchor:
-          ref: matrix_index_home
-          shift: [15,5]
-        nets:
-          net: RST
       bat_plus:
         type: pad
         anchor:

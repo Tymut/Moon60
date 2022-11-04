@@ -1,7 +1,7 @@
 
 #include QMK_KEYBOARD_H
 #include <stdio.h>
-#include "insequor58.h"
+#include "moon60.h"
 
 #define L_BASE 0
 #define L_LOWER (1 << 1)

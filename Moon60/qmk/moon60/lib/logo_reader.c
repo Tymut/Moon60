@@ -1,4 +1,4 @@
-#include "insequor58.h"
+#include "moon60.h"
 
 const char *read_logo(void) {
   static char logo[] = {
