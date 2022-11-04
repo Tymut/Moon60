@@ -4,6 +4,10 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Insequor58 ≈ Moon60")
+  )
+
   (lib_symbols
     (symbol "Device:R_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
       (property "Reference" "R" (id 0) (at 0.762 0.508 0)
