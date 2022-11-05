@@ -14,4 +14,4 @@
 - The PCB is designed in KiCad 6.0
 - There are configuration files for KiCad in the KiCad folder.
 
-## - Noodle / Tymut
+## - Przemek Paciorek / Damian Pryszcz

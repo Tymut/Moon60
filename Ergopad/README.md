@@ -16,4 +16,4 @@
 - The next step after averaging the results is to design the PCB layout and keyboard housing in the "Ergogen" generator - (https://github.com/ergogen/ergogen).
 - The biometric averaged result is located in the "Result" subfolder.
 
-## - Noodle / Tymut
+## - Przemek Paciorek / Damian Pryszcz
