@@ -1,4 +1,4 @@
-# Moon60
+# Opis projektu Moon60
 
 ## Autorzy: Przemek Paciorek, Damian Pryszcz
 
