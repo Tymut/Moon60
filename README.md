@@ -1,6 +1,6 @@
 # Opis projektu Moon60
 ---
-## Autorzy: Przemek Paciorek, Damian Pryszcz
+## Autorzy: Przemek Paciorek ~ Nx0dle, Damian Pryszcz ~ Tymut
 ---
 Insequor58 - nazwa robocza
 Moon60 - nazwa główna
