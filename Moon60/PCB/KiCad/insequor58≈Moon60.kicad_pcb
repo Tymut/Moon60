@@ -95,7 +95,7 @@
   (net 21 "P8")
   (net 22 "P9")
 
-  (footprint "E73:SW_TACT_ALPS_SKQGABE010" (layer "F.Cu")
+  (footprint "moon60Footprints:SW_TACT_ALPS_SKQGABE010" (layer "F.Cu")
     (tedit 0) (tstamp 00000000-0000-0000-0000-00005bf2cc94)
     (at 267.96 114.44 -90)
     (descr "Low-profile SMD Tactile Switch, https://www.e-switch.com/product-catalog/tact/product-lines/tl3342-series-low-profile-smt-tact-switch")
@@ -119,7 +119,7 @@
       (net 14 "RST") (tstamp bf0fdb33-0388-4d72-b2c3-ac10e85fac8b))
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 01b274fa-9247-468d-af28-2b5892403257)
     (at 168.96 136.44)
     (attr through_hole)
@@ -165,7 +165,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 04e0b164-b800-43d2-ba43-1550def6cce7)
     (at 225.96 152.44)
     (attr through_hole)
@@ -205,7 +205,7 @@
       (net 10 "P14") (tstamp e4e43380-4d43-4e43-ba3d-e14a9da80ad9))
   )
 
-  (footprint "Insequor58:OLED_4Pin" (layer "F.Cu")
+  (footprint "moon60Footprints:OLED_4Pin" (layer "F.Cu")
     (tedit 5BEDC7F4) (tstamp 05b3bd03-01ac-42b5-bd72-3e9e2aa3a4f9)
     (at 243.107874 127.064604)
     (descr "Connecteur 6 pins")
@@ -233,7 +233,7 @@
     (pad "4" thru_hole circle (at 7.62 0) (size 1.397 1.397) (drill 0.8128) (layers *.Cu *.Mask "F.SilkS") (tstamp 6742e3d9-1507-46be-97ba-d0c0d5e8ec2b))
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 05e0604c-d293-4e49-a1e7-10dc6f57070c)
     (at 187.96 110.44)
     (attr through_hole)
@@ -279,7 +279,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 06c8c5b3-60ff-46be-9f13-2477193df15a)
     (at 149.96 124.44)
     (attr through_hole)
@@ -325,7 +325,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 09513564-a508-4c60-92f2-2641d3f4c75e)
     (at 130.96 162.44 180)
     (attr through_hole)
@@ -381,7 +381,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 09f2ec51-594e-41c4-8392-4a365b3e2cbc)
     (at 206.96 145.44)
     (attr through_hole)
@@ -421,7 +421,7 @@
       (net 2 "P6") (tstamp e91b6854-b0e4-404b-83d6-485cc34dd458))
   )
 
-  (footprint "Insequor58:Jumper" (layer "F.Cu")
+  (footprint "moon60Footprints:Jumper" (layer "F.Cu")
     (tedit 5BF1A705) (tstamp 0b2876fb-427c-4bfd-b652-d571c1974221)
     (at 248.108849 121.769111 90)
     (attr smd)
@@ -448,7 +448,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 0d6b1394-c098-425d-a5e6-75c5c4873ffb)
     (at 149.96 114.44)
     (attr through_hole)
@@ -488,7 +488,7 @@
       (net 6 "P20") (tstamp ee52f6f6-84c8-4b11-82ff-96091f86969e))
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 11259070-61ac-4093-b90e-fc6724671aad)
     (at 225.96 143.44 180)
     (attr through_hole)
@@ -544,7 +544,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 126cbca7-71e1-4781-a3e0-f52f4ca47317)
     (at 130.96 162.44)
     (attr through_hole)
@@ -590,7 +590,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 1cf798fa-3d31-417e-944b-35f846c93b33)
     (at 149.96 124.44 180)
     (attr through_hole)
@@ -646,7 +646,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 1d8a2a5f-b414-4b72-950c-a4cad999a975)
     (at 187.96 91.44)
     (attr through_hole)
@@ -692,7 +692,7 @@
     )
   )
 
-  (footprint "TRRS-PJ-320A-dual" (layer "F.Cu")
+  (footprint "moon60Footprints:TRRS-PJ-320A-dual" (layer "F.Cu")
     (tedit 5970F8E5) (tstamp 210b8a8f-e5ad-4f12-bdf2-bf75daafcbd5)
     (at 263.96 96.44)
     (attr through_hole)
@@ -731,7 +731,7 @@
       (net 15 "VCC") (tstamp 9eaa056d-aff7-4ae1-8138-417f2502c3cd))
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 22a97dd6-1535-407b-b419-32884a5be8e5)
     (at 130.96 133.44)
     (attr through_hole)
@@ -771,7 +771,7 @@
       (net 3 "P5") (tstamp 597a5caf-689b-4b21-a3fd-15d42b1cd626))
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 249786b3-baa9-466a-a8b9-37ef261d3bd4)
     (at 149.96 162.44)
     (attr through_hole)
@@ -817,7 +817,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 260a8c19-465f-478b-a3dd-5929c1ed5dd5)
     (at 206.96 98.44)
     (attr through_hole)
@@ -863,7 +863,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 26e06fce-3a50-4ff4-9344-7a8f4c8f9cca)
     (at 149.96 105.44)
     (attr through_hole)
@@ -909,7 +909,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 29cd810d-e4e1-4cd1-bd6a-d18e4fe8aa02)
     (at 181.96 184.44)
     (attr through_hole)
@@ -949,7 +949,7 @@
       (net 21 "P8") (tstamp fa6c916b-1b5c-4ccf-bfa2-608d9c104444))
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 2d236f9c-0fa9-4377-a518-b30621b48401)
     (at 255.89128 197.054229 -50)
     (attr through_hole)
@@ -989,7 +989,7 @@
       (net 10 "P14") (tstamp d5c903eb-e5ec-4292-ac5d-88436d65d7f6))
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 2e8143ef-2541-4d62-bf5e-ea4652ea2fac)
     (at 206.96 164.44)
     (attr through_hole)
@@ -1029,7 +1029,7 @@
       (net 9 "P15") (tstamp b6a54852-44ce-433a-8c80-197b99720f79))
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 2eb759ae-14aa-4e89-8048-b976e231d94b)
     (at 187.96 91.44 180)
     (attr through_hole)
@@ -1085,7 +1085,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 3004d3fa-f26c-49e1-a2d1-bc19b8480f68)
     (at 168.96 117.44)
     (attr through_hole)
@@ -1131,7 +1131,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 32456feb-e848-44c3-add8-3bb79784dfe5)
     (at 187.96 129.44 180)
     (attr through_hole)
@@ -1187,7 +1187,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 32bb8c15-9d08-470e-8e01-ca1b6a9405ad)
     (at 206.96 155.44)
     (attr through_hole)
@@ -1233,7 +1233,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 37072781-a3af-4412-964a-ca79e4558a83)
     (at 187.96 110.44 180)
     (attr through_hole)
@@ -1289,7 +1289,7 @@
     )
   )
 
-  (footprint "" (layer "F.Cu")
+  (footprint "moon60Footprints:" (layer "F.Cu")
     (tedit 0) (tstamp 3eee04c4-0c0f-4f43-ba69-074c1e1ab213)
     (at 269.24 134.62)
     (fp_text reference "" (at 0 0) (layer "F.SilkS")
@@ -1303,7 +1303,7 @@
     (pad "TH2" thru_hole circle (at -7.24 0) (size 4 4) (drill 2.4) (layers *.Cu *.Mask) (tstamp 66e67942-71f2-439d-9a01-d14b5041a0bd))
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 4147fa34-0f23-4426-b203-cf171bb208be)
     (at 219.96 191.44)
     (attr through_hole)
@@ -1343,7 +1343,7 @@
       (net 21 "P8") (tstamp f871ca99-8d34-4839-bceb-fffc688f9be2))
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 420a7a5a-206f-4136-ba26-ed95f77d615f)
     (at 244.96 147.44 180)
     (attr through_hole)
@@ -1399,7 +1399,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 42d9a8ef-06e1-4ff1-b06d-13cf1cdb1e34)
     (at 130.96 152.44)
     (attr through_hole)
@@ -1439,7 +1439,7 @@
       (net 1 "P21") (tstamp a3e2d166-15b6-49e4-b7b5-bc976ec2aa2c))
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 461115a5-578a-465a-8d7e-c78577369cdf)
     (at 130.96 124.44 180)
     (attr through_hole)
@@ -1495,7 +1495,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 4c98f2db-f1dc-45c1-b025-1250f185eff7)
     (at 244.96 177.44 155)
     (attr through_hole)
@@ -1551,7 +1551,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 4df0de0e-3d54-4b57-ade9-463ba00905f5)
     (at 149.96 105.44 180)
     (attr through_hole)
@@ -1607,7 +1607,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 51da710c-3a2e-4664-83d6-4db558b12bd9)
     (at 168.96 117.44 180)
     (attr through_hole)
@@ -1663,7 +1663,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 639bb3bb-3a0f-43e7-b5e6-b799cc404ea8)
     (at 225.96 105.44 180)
     (attr through_hole)
@@ -1719,7 +1719,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 63b1309b-57f6-4592-993f-1d092b16969d)
     (at 149.96 171.44)
     (attr through_hole)
@@ -1759,7 +1759,7 @@
       (net 11 "P7") (tstamp ec718cf2-64f4-4ec1-b507-254e74afecf7))
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 65271ac4-b2ac-4c70-9f6f-bc87fcc89357)
     (at 225.96 162.44)
     (attr through_hole)
@@ -1805,7 +1805,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 68105543-c102-4495-a3c4-d7667d72501d)
     (at 130.96 124.44)
     (attr through_hole)
@@ -1851,7 +1851,7 @@
     )
   )
 
-  (footprint "Insequor58:Jumper" (layer "F.Cu")
+  (footprint "moon60Footprints:Jumper" (layer "F.Cu")
     (tedit 5BF1A705) (tstamp 6ac3056f-48c9-497a-a8ca-ea0a1af5e7b6)
     (at 250.716848 121.769111 90)
     (attr smd)
@@ -1878,7 +1878,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 6b4bef83-6ee9-45ed-b18a-93f29581ace6)
     (at 181.96 175.44 180)
     (attr through_hole)
@@ -1934,7 +1934,7 @@
     )
   )
 
-  (footprint "Insequor58:RESISTOR_mini" (layer "F.Cu")
+  (footprint "moon60Footprints:RESISTOR_mini" (layer "F.Cu")
     (tedit 5B8CD4DE) (tstamp 6ca91dc5-69af-401d-8759-1ebd41d78c14)
     (at 263.067263 113.065756 -90)
     (descr "Resitance 3 pas")
@@ -1977,7 +1977,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 6d59612a-3887-49e5-9b15-006df1a4de44)
     (at 206.96 107.44)
     (attr through_hole)
@@ -2017,7 +2017,7 @@
       (net 9 "P15") (tstamp c4d1347f-3c2c-4878-9bef-166feadf0e9a))
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 6f18e79e-ed77-4466-86c6-8fbab299b0b1)
     (at 168.96 98.44 180)
     (attr through_hole)
@@ -2073,7 +2073,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 6f872457-165b-4d32-bd19-780d7c3d2c94)
     (at 168.96 155.44)
     (attr through_hole)
@@ -2119,7 +2119,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 6fde9f7c-b492-4f7b-9617-1169f291dcd1)
     (at 225.96 124.44 180)
     (attr through_hole)
@@ -2175,7 +2175,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 71c80802-bcb8-4388-915c-6cff043ae02e)
     (at 206.96 155.44 180)
     (attr through_hole)
@@ -2231,7 +2231,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 7c09492e-12dd-4888-968c-d6a2599e866e)
     (at 206.96 117.44 180)
     (attr through_hole)
@@ -2287,7 +2287,7 @@
     )
   )
 
-  (footprint "" (layer "F.Cu")
+  (footprint "moon60Footprints:" (layer "F.Cu")
     (tedit 0) (tstamp 7c311acb-63f0-4e60-b759-992035a979e3)
     (at 240 134.62)
     (fp_text reference "" (at 0 0) (layer "F.SilkS")
@@ -2301,7 +2301,7 @@
     (pad "TH1" thru_hole circle locked (at 0 0) (size 4 4) (drill 2.4) (layers *.Cu *.Mask) (tstamp 07d78dc9-dd2f-41aa-816c-162197e04145))
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 8221d15d-58ee-49cd-bf8d-a4254a316b09)
     (at 130.96 105.44 180)
     (attr through_hole)
@@ -2357,7 +2357,7 @@
     )
   )
 
-  (footprint "Insequor58:RESISTOR_mini" (layer "F.Cu")
+  (footprint "moon60Footprints:RESISTOR_mini" (layer "F.Cu")
     (tedit 5B8CD4DE) (tstamp 82232faa-35b0-41a8-9a7a-06956541a017)
     (at 260.817263 113.065756 -90)
     (descr "Resitance 3 pas")
@@ -2400,7 +2400,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 87769737-3fe4-4b8d-829d-d5ff9738c89a)
     (at 225.96 105.44)
     (attr through_hole)
@@ -2446,7 +2446,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 92d16182-09d8-4dd4-b2fa-c0baa208f994)
     (at 206.96 126.44)
     (attr through_hole)
@@ -2486,7 +2486,7 @@
       (net 9 "P15") (tstamp a1201688-5aac-4a05-8c6e-6ba701e5ee11))
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 93b2ba68-cde9-4420-8f84-5a1ffeddd9c7)
     (at 149.96 133.44)
     (attr through_hole)
@@ -2526,7 +2526,7 @@
       (net 6 "P20") (tstamp e78f2324-651a-43b1-adfe-0ad4702c38ff))
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 9867e04f-f2dc-4cfe-903f-9525fccffc38)
     (at 225.96 114.44)
     (attr through_hole)
@@ -2566,7 +2566,7 @@
       (net 10 "P14") (tstamp c7cc82db-2816-40c1-b796-c8543c55ebba))
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 988306a3-a4f1-4619-a8fc-743d051f8ff2)
     (at 225.96 143.44)
     (attr through_hole)
@@ -2612,7 +2612,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 98f326e3-6dbe-47b5-94c8-363767e6fe11)
     (at 181.96 175.44)
     (attr through_hole)
@@ -2658,7 +2658,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp 9c8f98c9-725b-4799-812e-ac96ab62d0a2)
     (at 149.96 143.44 180)
     (attr through_hole)
@@ -2714,7 +2714,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp 9d40029f-389f-49cc-9fb2-40536c554794)
     (at 168.96 98.44)
     (attr through_hole)
@@ -2760,7 +2760,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp 9efef64b-c433-4bfa-bef5-ce3f52cfb570)
     (at 149.96 152.44)
     (attr through_hole)
@@ -2800,7 +2800,7 @@
       (net 6 "P20") (tstamp b8412d98-6465-4062-be74-2eda9690a695))
   )
 
-  (footprint "Insequor58:Jumper" (layer "F.Cu")
+  (footprint "moon60Footprints:Jumper" (layer "F.Cu")
     (tedit 5BF1A705) (tstamp a01f4b22-f724-441a-a928-e50ba35a04f6)
     (at 243.108849 121.769111 90)
     (attr smd)
@@ -2827,7 +2827,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp a28c8dba-cd5b-4392-954d-f17820c17b0e)
     (at 130.96 114.44)
     (attr through_hole)
@@ -2867,7 +2867,7 @@
       (net 1 "P21") (tstamp c21b8d7f-b916-445f-9854-4f3f0038ad61))
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp a2a161e0-681f-4c7d-a479-d1946557b40d)
     (at 225.96 133.44)
     (attr through_hole)
@@ -2907,7 +2907,7 @@
       (net 3 "P5") (tstamp db12f9e9-29c5-4e1c-a109-65283c804789))
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp a6e0262e-7b99-4738-9da5-557a017c7d07)
     (at 206.96 136.44 180)
     (attr through_hole)
@@ -2963,7 +2963,7 @@
     )
   )
 
-  (footprint "Graphic:moonBIG" (layer "F.Cu")
+  (footprint "moon60Footprints:moonBIG" (layer "F.Cu")
     (tedit 0) (tstamp a71fece2-3583-4f5e-aaf7-ee5ea7320383)
     (at 251.117634 133.968848)
     (attr board_only exclude_from_pos_files exclude_from_bom)
@@ -4035,7 +4035,7 @@
       ) (layer "F.Mask") (width 0) (fill solid) (tstamp f77587b4-c036-4590-80e5-7c845e5f1771))
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp a9264b30-064c-439e-9e5f-c1a33b572869)
     (at 168.96 126.44)
     (attr through_hole)
@@ -4075,7 +4075,7 @@
       (net 7 "P19") (tstamp bf9baaa7-fdfc-49fc-81f4-fed00592af79))
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp a9994039-ded6-410b-b0ba-ca62c951916f)
     (at 262.78568 191.269141 130)
     (attr through_hole)
@@ -4131,7 +4131,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp ac3f2ad1-a820-45c7-9cf1-1b5e98207c25)
     (at 168.96 155.44 180)
     (attr through_hole)
@@ -4187,7 +4187,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp b1e5ea0b-6a0b-48fe-aada-bdd5645e46ee)
     (at 206.96 117.44)
     (attr through_hole)
@@ -4233,7 +4233,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp b5938eca-d198-458d-a3f7-64e964dfc7fa)
     (at 168.96 136.44 180)
     (attr through_hole)
@@ -4289,7 +4289,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp b6241dfb-aaf8-411c-bf92-145b17b7c726)
     (at 225.96 171.44)
     (attr through_hole)
@@ -4329,7 +4329,7 @@
       (net 11 "P7") (tstamp c9d7936f-9690-4e40-9727-61fa338e7926))
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp b673f540-9f31-48af-aee8-66391787b62b)
     (at 241.156436 185.59677 -25)
     (attr through_hole)
@@ -4369,7 +4369,7 @@
       (net 21 "P8") (tstamp 905ad7f6-9c26-40b2-a055-298d9f1c04a3))
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp b6d2d2dd-79e4-4e6f-9651-448dcca46131)
     (at 219.96 182.44)
     (attr through_hole)
@@ -4415,7 +4415,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp b7604102-f62c-419a-ad46-50ddebec3a93)
     (at 225.96 124.44)
     (attr through_hole)
@@ -4461,7 +4461,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp b93d8848-1d75-4f37-9f14-e1e42f93bbac)
     (at 168.96 145.44)
     (attr through_hole)
@@ -4501,7 +4501,7 @@
       (net 7 "P19") (tstamp bf5028a2-0968-4d2b-9883-c455182887e4))
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp b99fe19e-d115-4cc8-813e-874b8f0b10ea)
     (at 130.96 171.44)
     (attr through_hole)
@@ -4541,7 +4541,7 @@
       (net 11 "P7") (tstamp 96327e4d-c597-4de7-8f3f-d1628ab7e975))
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp bd0d548d-fde5-49a1-9af1-aece55315394)
     (at 130.96 105.44)
     (attr through_hole)
@@ -4587,7 +4587,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp bd371069-1973-4c56-b527-c02c50dca8cd)
     (at 187.96 129.44)
     (attr through_hole)
@@ -4633,7 +4633,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp c28971c4-df3a-4cf7-a037-19b67a6b64f9)
     (at 168.96 107.44)
     (attr through_hole)
@@ -4673,7 +4673,7 @@
       (net 7 "P19") (tstamp bdce8bc3-c505-490d-81c5-3aeffb7178bb))
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp c4cff48a-20c7-4919-a98e-cdb8e2e57e57)
     (at 244.96 147.44)
     (attr through_hole)
@@ -4719,7 +4719,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp c539fe74-3af2-481d-a083-fbeeaed54331)
     (at 225.96 162.44 180)
     (attr through_hole)
@@ -4775,7 +4775,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp c9f3cf76-7b3a-45b1-aafe-b7a8f2d4f72f)
     (at 168.96 164.44)
     (attr through_hole)
@@ -4815,7 +4815,7 @@
       (net 7 "P19") (tstamp f6b0bfce-b84d-456d-a563-d11980cb65f2))
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp cb9ce17c-3567-45bf-8ce7-7985bf3963c9)
     (at 149.96 143.44)
     (attr through_hole)
@@ -4861,7 +4861,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp d1e810f5-63ce-427c-95a6-6222cefdc59e)
     (at 206.96 98.44 180)
     (attr through_hole)
@@ -4917,7 +4917,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp d2504654-4470-42f1-8e44-d48b90c30e98)
     (at 206.96 136.44)
     (attr through_hole)
@@ -4963,7 +4963,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp d3ff63f8-44da-4342-b805-6fc945458949)
     (at 187.96 157.44)
     (attr through_hole)
@@ -5003,7 +5003,7 @@
       (net 11 "P7") (tstamp d36063b4-5f45-473f-85cc-7429d5d69ef1))
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp d4552eb7-6495-4ae8-a08d-d6eec4563144)
     (at 130.96 143.44 180)
     (attr through_hole)
@@ -5059,7 +5059,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp d5493010-b38c-4905-9688-6e614c0e7973)
     (at 200.96 184.44)
     (attr through_hole)
@@ -5099,7 +5099,7 @@
       (net 6 "P20") (tstamp 91fc4d22-067f-4717-8f57-06e3a549afee))
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp d6a483bd-faae-4645-930c-71cb9d5ef0da)
     (at 187.96 148.44)
     (attr through_hole)
@@ -5145,7 +5145,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp d7aacad6-d9c6-4996-b7ca-4ab4dd13439d)
     (at 244.96 177.44 -25)
     (attr through_hole)
@@ -5191,7 +5191,7 @@
     )
   )
 
-  (footprint "ProMicro" (layer "F.Cu")
+  (footprint "moon60Footprints:ProMicro" (layer "F.Cu")
     (tedit 5B307E4C) (tstamp df9a66b2-54e1-48e6-bddb-3fbff7fbdf32)
     (at 248.049495 108.738135 -90)
     (attr through_hole)
@@ -5257,7 +5257,7 @@
       (net 22 "P9") (tstamp b24ded21-09ce-4a03-bfcc-c1fb2840db48))
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp e1eea6f3-eed0-4f9b-8cd4-ad59d411ec9b)
     (at 187.96 119.44)
     (attr through_hole)
@@ -5297,7 +5297,7 @@
       (net 8 "P18") (tstamp ebd30143-45a0-4864-9ed3-c54d428e3e9d))
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp e1fdd427-1f74-4e9e-bc57-3bd07239acc2)
     (at 187.96 148.44 180)
     (attr through_hole)
@@ -5353,7 +5353,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp e302268d-751b-42ac-864c-f7828fa68faa)
     (at 200.96 175.44 180)
     (attr through_hole)
@@ -5409,7 +5409,7 @@
     )
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp e3876025-6431-4dfb-8a23-a54ed2427920)
     (at 219.96 182.44 180)
     (attr through_hole)
@@ -5465,7 +5465,7 @@
     )
   )
 
-  (footprint "ProMicro" (layer "F.Cu")
+  (footprint "moon60Footprints:ProMicro" (layer "F.Cu")
     (tedit 5B307E4C) (tstamp e4b3e2a0-28fe-40a5-8d28-c75191ae0695)
     (at 245.96 107.44 -90)
     (attr through_hole)
@@ -5531,7 +5531,7 @@
       (net 22 "P9") (tstamp 752b4608-68d5-4c53-acb0-517c0e342d95))
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp e4bbe795-ef88-41ef-863c-a563c23ce539)
     (at 244.96 156.44)
     (attr through_hole)
@@ -5571,7 +5571,7 @@
       (net 8 "P18") (tstamp a31234d1-4be7-4605-a699-380cbd986864))
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp e5eefaff-b80c-408c-962c-28abcd291b49)
     (at 187.96 138.44)
     (attr through_hole)
@@ -5611,7 +5611,7 @@
       (net 8 "P18") (tstamp f1fda48f-432b-499c-8754-bc3d4548f27e))
   )
 
-  (footprint "Graphic:moonMin" (layer "F.Cu")
+  (footprint "moon60Footprints:moonMin" (layer "F.Cu")
     (tedit 0) (tstamp ed5c5330-4a59-456f-aa71-9a4dcc4d5b1e)
     (at 247.139676 106.571474 90)
     (attr board_only exclude_from_pos_files exclude_from_bom)
@@ -5759,7 +5759,7 @@
       ) (layer "F.SilkS") (width 0) (fill solid) (tstamp ecc03351-b5ee-48c5-8f2a-7d3c30f65817))
   )
 
-  (footprint "PG1350" (layer "F.Cu")
+  (footprint "moon60Footprints:PG1350" (layer "F.Cu")
     (tedit 5DD50112) (tstamp ef8e6cd0-3354-4287-b623-4b181dc3fa71)
     (at 149.96 162.44 180)
     (attr through_hole)
@@ -5815,7 +5815,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp f8638fea-ce37-4b7c-baa6-5e5a9d7dfd47)
     (at 130.96 143.44)
     (attr through_hole)
@@ -5861,7 +5861,7 @@
     )
   )
 
-  (footprint "ComboDiode" (layer "F.Cu")
+  (footprint "moon60Footprints:ComboDiode" (layer "F.Cu")
     (tedit 5B24D78E) (tstamp fa25b1bd-10d8-4538-81a8-32bfb6c933b2)
     (at 187.96 100.44)
     (attr through_hole)
@@ -5901,7 +5901,7 @@
       (net 8 "P18") (tstamp ef313a98-3093-455f-a190-e0451439fcef))
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp fb83ce3f-f082-4abb-bf63-f6e574dabac8)
     (at 200.96 175.44)
     (attr through_hole)
@@ -5947,7 +5947,7 @@
     )
   )
 
-  (footprint "Insequor58:Jumper" (layer "F.Cu")
+  (footprint "moon60Footprints:Jumper" (layer "F.Cu")
     (tedit 5BF1A705) (tstamp fc89b91a-5ddb-4663-aa21-9964991df4b1)
     (at 245.608849 121.769111 90)
     (attr smd)
@@ -5974,7 +5974,7 @@
     )
   )
 
-  (footprint "MX" (layer "F.Cu")
+  (footprint "moon60Footprints:MX" (layer "F.Cu")
     (tedit 5DD4F656) (tstamp fd864b8d-76df-4588-9198-0e3c270a2d92)
     (at 262.78568 191.269141 -50)
     (attr through_hole)
@@ -6020,7 +6020,7 @@
     )
   )
 
-  (footprint "Insequor58:Jumper" (layer "B.Cu")
+  (footprint "moon60Footprints:Jumper" (layer "B.Cu")
     (tedit 5BF1A705) (tstamp 2d1e4362-00c8-4855-845e-9d0a2064126b)
     (at 250.709085 121.76944 90)
     (attr smd)
@@ -6047,7 +6047,7 @@
     )
   )
 
-  (footprint "Insequor58:Jumper" (layer "B.Cu")
+  (footprint "moon60Footprints:Jumper" (layer "B.Cu")
     (tedit 5BF1A705) (tstamp 4ce24909-5cb1-4e15-991a-a951c82eb348)
     (at 245.708849 121.769111 90)
     (attr smd)
@@ -6074,7 +6074,7 @@
     )
   )
 
-  (footprint "Insequor58:Jumper" (layer "B.Cu")
+  (footprint "moon60Footprints:Jumper" (layer "B.Cu")
     (tedit 5BF1A705) (tstamp 6fc324de-cb48-433d-bb86-0b2848560eed)
     (at 248.208849 121.769111 90)
     (attr smd)
@@ -6101,7 +6101,7 @@
     )
   )
 
-  (footprint "Graphic:moonMin" (layer "B.Cu")
+  (footprint "moon60Footprints:moonMin" (layer "B.Cu")
     (tedit 0) (tstamp 8b94c71b-0607-4245-8354-b3c6652e19ea)
     (at 247.139676 106.571474 -90)
     (attr board_only exclude_from_pos_files exclude_from_bom)
@@ -6249,7 +6249,7 @@
       ) (layer "B.SilkS") (width 0) (fill solid) (tstamp d11c0ae9-eb53-40d1-aad5-6085b11b4d83))
   )
 
-  (footprint "Insequor58:Jumper" (layer "B.Cu")
+  (footprint "moon60Footprints:Jumper" (layer "B.Cu")
     (tedit 5BF1A705) (tstamp db85f456-a2dd-4c9e-a710-980445815172)
     (at 243.108849 121.769111 90)
     (attr smd)
@@ -6276,7 +6276,7 @@
     )
   )
 
-  (footprint "Graphic:moonBIG" (layer "B.Cu")
+  (footprint "moon60Footprints:moonBIG" (layer "B.Cu")
     (tedit 0) (tstamp e24dcf09-104d-48c3-9f1a-7a5fff26417d)
     (at 251.117634 133.968848 180)
     (attr board_only exclude_from_pos_files exclude_from_bom)
