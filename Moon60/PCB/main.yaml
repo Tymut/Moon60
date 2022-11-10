@@ -273,7 +273,7 @@ outlines:                 # outlines - określa krawędzie układu scalonegoo
       main:
         type: keys
         side: left
-        size: 14.1
+        size: 14.02
         bound: false
     keycaps_choc:
       main:
