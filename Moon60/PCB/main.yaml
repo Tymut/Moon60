@@ -672,8 +672,8 @@ cases:                 # cases - określa konfigurację plików .stl
   plateTRAY:
     - type: outline
       name: plate_TRAYMOUNT
-      extrude: 1.5
+      extrude: 2.4
   plateTOP:
     - type: outline
       name: plate_TOPMOUNT
-      extrude: 1.5
+      extrude: 2.4
