@@ -23,3 +23,18 @@ Opcje dostosowania:
 - Szeroka gama wyboru przełączników pozwala na dostosowanie wysokości jak i odczuć płynących z pisania.
 - Podstawka pod nadgarstki wyrównuje kąt pisania i podtrzymuje nadgarstki w jednym miejscu.
 - "Tenting" pozwala na dostosowanie kątu pisania i co za tym idzie ustawienia nadgarstków w bardziej naturalnej pozycji.
+
+### Wykorzystane komponenty:
+
+---
+
+- Własnoręcznie zaprojektowane PCB
+- Diody półprzewodnikowe
+- Arduino pro-micro
+- Wyświetlacze OLED
+- Przełączniki mechaniczne
+- Moduły Hot-swap
+
+Dzięki zastosowaniu odpowiedniego firmware klawiatura jest podzielona na dwie części. Wykorzystuje komunikację poprzez przewód TRRS.
+
+Mapa i funkcjonalność przycisków została przystosowana do jak najszybszej pracy w wielu dziedzinach. Obecnie do programowani, lecz planujemy rozwój w innych kierunkach.
