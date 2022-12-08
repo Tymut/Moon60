@@ -5,9 +5,12 @@
 ## Autorzy: Przemek Paciorek ~ Nx0dle, Damian Pryszcz ~ Tymut
 
 ---
-### Insequor58 - nazwa robocza.
 
-### Moon60 - nazwa główna.
+### Insequor58 - nazwa robocza
+
+### Moon60 - nazwa główna
+
+---
 
 Wraz z myślą i potrzebami dzisiejszego rynku stworzyliśmy projekt wszechstronnej klawiatury dostosowywanej pod użytkownika.
 
@@ -38,4 +41,4 @@ W tym celu stworzyliśmy projekt nazwany bazowo **Insequor58**, lecz został on 
 
 Dzięki zastosowaniu odpowiedniego firmware klawiatura jest podzielona na dwie części. Wykorzystuje komunikację poprzez przewód TRRS.
 
-Mapa i funkcjonalność przycisków została przystosowana do jak najszybszej pracy w wielu dziedzinach. Obecnie do programowani, lecz planujemy rozwój w innych kierunkach.
+Mapa i funkcjonalność przycisków została przystosowana do jak najszybszej pracy w wielu dziedzinach. Obecnie do programowania, lecz planujemy rozwój w innych kierunkach.
