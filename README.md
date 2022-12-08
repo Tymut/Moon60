@@ -5,8 +5,9 @@
 ## Autorzy: Przemek Paciorek ~ Nx0dle, Damian Pryszcz ~ Tymut
 
 ---
-Insequor58 - nazwa robocza
-Moon60 - nazwa główna
+Insequor58 - nazwa robocza.
+
+Moon60 - nazwa główna.
 
 Wraz z myślą i potrzebami dzisiejszego rynku stworzyliśmy projekt wszechstronnej klawiatury dostosowywanej pod użytkownika.
 
