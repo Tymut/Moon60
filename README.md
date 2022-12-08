@@ -1,16 +1,6 @@
-# Opis projektu Moon60
+# Opis projektu klawiatury biometrycznej - Moon60
 
----
-
-## Autorzy: Przemek Paciorek ~ Nx0dle, Damian Pryszcz ~ Tymut
-
----
-
-### Insequor58 - nazwa robocza
-
-### Moon60 - nazwa główna
-
----
+## Autorzy: Przemek Paciorek, Damian Pryszcz
 
 Wraz z myślą i potrzebami dzisiejszego rynku stworzyliśmy projekt wszechstronnej klawiatury dostosowywanej pod użytkownika.
 
@@ -20,17 +10,13 @@ W tym celu stworzyliśmy projekt nazwany bazowo **Insequor58**, lecz został on 
 
 ### Opcje dostosowania:
 
----
-
 - Rozdzielna budowa pozwala na dostosowanie szerokości rozstawu nadgarstków.
-- Ułożenie sekcji klawiszy jest zrobione w taki sposób aby zminimalizować ruch nadgarstka w trakcie pisania.
+- Ułożenie sekcji klawiszy jest zrobione w taki sposób aby zminimalizować ruch nadgarstka.
 - Szeroka gama wyboru przełączników pozwala na dostosowanie wysokości jak i odczuć płynących z pisania.
-- Podstawka pod nadgarstki wyrównuje kąt pisania i podtrzymuje nadgarstki w jednym miejscu.
-- "Tenting" pozwala na dostosowanie kątu pisania i co za tym idzie ustawienia nadgarstków w bardziej naturalnej pozycji.
+- Podstawka pod nadgarstki wyrównuje napięcie dłoni i podtrzymuje je w jednym miejscu.
+- "Tenting", czyli podniesienie poziome klawiatury pozwala na dostosowanie kątu pisania i co za tym idzie ustawienia nadgarstków w bardziej naturalnej pozycji.
 
 ### Wykorzystane komponenty:
-
----
 
 - Własnoręcznie zaprojektowane PCB
 - Diody półprzewodnikowe
@@ -41,14 +27,14 @@ W tym celu stworzyliśmy projekt nazwany bazowo **Insequor58**, lecz został on 
 
 Dzięki zastosowaniu odpowiedniego firmware klawiatura jest podzielona na dwie części. Wykorzystuje komunikację poprzez przewód TRRS.
 
+"Tenting" i podpórka pod nadgarstki będą modułami magnetycznymi, a do produkcji obudowy i tych komponentów użyliśmy oprogramowania CAD CAM i drukarki 3D.
+
 Mapa i funkcjonalność przycisków została przystosowana do jak najszybszej pracy w wielu dziedzinach. Obecnie do programowania, lecz planujemy rozwój w innych kierunkach.
 
 W przyszłości klawiatura będzie miała możliwość przypisania dowolnych klawiszy w "locie", czyli poprzez wyświetlacz i wgrany na nią firmware, jak i również wyświetlania:
-
----
 
 - prędkości pisania
 - poziomu ekploatacji komponentów komputera
 - efektów graficznych
 
-Planujemy złożony rozwój projektu i liczymy na ogromne rezultaty.
+Planujemy dalszy złożony rozwój projektu i liczymy na liczne rezultaty.
