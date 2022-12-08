@@ -14,7 +14,7 @@ Dzisiejszy świat opiera się na rozwoju technologii. W wielu jej dziedzinach u�
 
 W tym celu stworzyliśmy projekt nazwany bazowo **Insequor58**, lecz został on zmodyfikowany i przeniesiony do nazwy **Moon60**. Projekt stworzony został w celu poprawienia ergonomii ułożenia nadgarstków i zmniejszenia ich napięcia, jak i ułatwieniu użytkowania klawiatury przez osoby z dysfunkcjami. Projekt ma za zadanie również zapewnić użytkownikowi możliwie w jak największym stopniu dostosowanie klawiatury pod swoje potrzeby.
 
-Opcje dostosowania:
+### Opcje dostosowania:
 
 ---
 
