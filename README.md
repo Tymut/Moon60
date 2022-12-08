@@ -42,3 +42,13 @@ W tym celu stworzyliśmy projekt nazwany bazowo **Insequor58**, lecz został on 
 Dzięki zastosowaniu odpowiedniego firmware klawiatura jest podzielona na dwie części. Wykorzystuje komunikację poprzez przewód TRRS.
 
 Mapa i funkcjonalność przycisków została przystosowana do jak najszybszej pracy w wielu dziedzinach. Obecnie do programowania, lecz planujemy rozwój w innych kierunkach.
+
+W przyszłości klawiatura będzie miała możliwość przypisania dowolnych klawiszy w "locie", czyli poprzez wyświetlacz i wgrany na nią firmware, jak i również wyświetlania:
+
+---
+
+- prędkości pisania
+- poziomu ekploatacji komponentów komputera
+- efektów graficznych
+
+Planujemy złożony rozwój projektu i liczymy na ogromne rezultaty.
