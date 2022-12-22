@@ -1,0 +1,79 @@
+# Wykonał: Przemek Paciorek
+# Na płytce zostały zdefiniowane komponenty pozwalające na pracę przewodową i bezprzewodową.
+# Definicje:
+  # Choc keycaps = 17.5 x 16.5
+  # cx = 18
+  # cy = 17
+  # MX keycaps = 18 x 18
+  # U = 19.05
+  # u = 19
+  # Jednostki podawane są w milimetrach
+points:                 # points - określa pozycjonowanie slotów na switche
+  key:
+    padding: u
+    footprints:
+      choc_hotswap:
+        type: choc
+        anchor:
+          rotate: 180
+        nets:
+          from: =column_net
+          to: =row_net
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
+      mx_hotswap:
+        type: mx
+        nets:
+          from: =row_net
+          to: =column_net
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
+      diode:
+        type: diode
+        nets:
+          from: =row_net
+          to: =row_net
+        anchor:
+          shift: [0, -9]
+  zones:
+    matrix:
+      key:
+        tags:
+          1u: true
+      key.padding: u
+      columns:
+        pinkie:
+        ring:
+          stagger: 3
+        middle:
+          stagger: 3
+        index:
+          stagger: -3
+        far:
+          stagger: -3
+      rows:
+        bottom:
+        home:
+        middle:
+        top:
+    thumb:
+      anchor:
+        ref: matrix_far_bottom
+        shift: [19,-19]
+      columns:
+        big:
+          stagger: 7
+          spread: 2
+          rotate: -35
+          key:
+            height: 2
+        top_small:
+          stagger: 9
+        bot_small:
+          stagger: -18
+          spread: 0
+
