@@ -15,6 +15,7 @@ BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
 AUDIO_ENABLE = no           # Audio output
 SPLIT_KEYBOARD = yes		# Split keyboard
+LTO_ENABLE = yes        # Memory optimalization
 
 # if firmware needs too much space:
 # LTO_ENABLE = yes
