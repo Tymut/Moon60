@@ -35,7 +35,7 @@ points:                 # points - określa pozycjonowanie slotów na switche
       diode:
         type: diode
         nets:
-          from: =column_net
+          from: =row_net
           to: =row_net
         anchor:
           shift: [0, -9]
@@ -149,31 +149,31 @@ outlines:                 # outlines - określa krawędzie układu scalonegoo
         anchor:
           - ref: matrix_outerpinkie_top
             shift: [9.5,-9.5]
-        radius: 1.5
+        radius: 2.7
       bottom_left:
         type: circle
         anchor:
           - ref: matrix_outerpinkie_bottom
             shift: [9.5,9.5]
-        radius: 1.5
+        radius: 2.7
       bottom_right:
         type: circle
         anchor:
           - ref: matrix_far_bottom
             shift: [8,9.5]
-        radius: 1.5
+        radius: 2.7
       top_right:
         type: circle
         anchor:
           - ref: matrix_far_top
             shift: [8,-9.5]
-        radius: 1.5
+        radius: 2.7
       addon_outer:
         type: circle
         anchor:
           - ref: thumbfan_fourth_bottom
             shift: [13.5,9.5]
-        radius: 1.5
+        radius: 2.7
     mounting_holesTRAYMOUNT:
       $extends: outlines.exports.screw_holesTRAYMOUNT
       top_left:
@@ -192,55 +192,55 @@ outlines:                 # outlines - określa krawędzie układu scalonegoo
         anchor:
           - ref: matrix_outerpinkie_top
             shift: [-12.5,9]
-        radius: 1.5
+        radius: 3.25
       bottom_left:
         type: circle
         anchor:
           - ref: matrix_outerpinkie_bottom
             shift: [-12.5,-11]
-        radius: 1.5
+        radius: 3.25
       bottom_leftMiddle:
         type: circle
         anchor:
           - ref: thumbfan_first_bottom
             shift: [-11,-12.5]
-        radius: 1.5
+        radius: 3.25
       bottom_rightMiddle:
         type: circle
         anchor:
           - ref: thumbfan_third_bottom
             shift: [-11,-12.5]
-        radius: 1.5
+        radius: 3.25
       bottom_right:
         type: circle
         anchor:
           - ref: thumbfan_fifth_bottom
             shift: [12.5,-11.5]
-        radius: 1.5
+        radius: 3.25
       bottom_rightOuter:
         type: circle
         anchor:
           - ref: thumbfan_fifth_bottom
             shift: [12.5,11.5]
-        radius: 1.5
+        radius: 3.25
       top_right:
         type: circle
         anchor:
           - ref: matrix_far_top
             shift: [42,-35]
-        radius: 1.5
+        radius: 3.25
       top_rightMiddle:
         type: circle
         anchor:
           - ref: matrix_index_top
             shift: [0,21]
-        radius: 1.5
+        radius: 3.25
       top_leftMiddle:
         type: circle
         anchor:
           - ref: matrix_ring_top
             shift: [10,21]
-        radius: 1.5
+        radius: 3.25
     mounting_holesTOPMOUNT:
       $extends: outlines.exports.screw_holesTOPMOUNT
       top_left:
@@ -273,7 +273,7 @@ outlines:                 # outlines - określa krawędzie układu scalonegoo
       main:
         type: keys
         side: left
-        size: 14.1
+        size: 14.02
         bound: false
     keycaps_choc:
       main:
@@ -349,10 +349,10 @@ outlines:                 # outlines - określa krawędzie układu scalonegoo
         type: outline
         name: promicro_platecut
         operation: subtract
-    # screw_holes:
-    #   type: outline
-    #   name: screw_holesTRAYMOUNT
-    #   operation: subtract
+      screw_holes:
+        type: outline
+        name: screw_holesTRAYMOUNT
+        operation: subtract
     plate_TOPMOUNT:
       main:
         type: outline
@@ -672,8 +672,8 @@ cases:                 # cases - określa konfigurację plików .stl
   plateTRAY:
     - type: outline
       name: plate_TRAYMOUNT
-      extrude: 3
+      extrude: 3.5
   plateTOP:
     - type: outline
       name: plate_TOPMOUNT
-      extrude: 3
+      extrude: 3.5

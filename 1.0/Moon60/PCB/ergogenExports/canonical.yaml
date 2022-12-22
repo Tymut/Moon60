@@ -36,7 +36,7 @@ matrix_outerpinkie_bottom:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -98,7 +98,7 @@ matrix_outerpinkie_middle:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -150,7 +150,7 @@ matrix_outerpinkie_home:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -202,7 +202,7 @@ matrix_outerpinkie_top:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -254,7 +254,7 @@ matrix_pinkie_bottom:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -316,7 +316,7 @@ matrix_pinkie_middle:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -368,7 +368,7 @@ matrix_pinkie_home:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -420,7 +420,7 @@ matrix_pinkie_top:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -472,7 +472,7 @@ matrix_ring_bottom:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -534,7 +534,7 @@ matrix_ring_middle:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -586,7 +586,7 @@ matrix_ring_home:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -638,7 +638,7 @@ matrix_ring_top:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -690,7 +690,7 @@ matrix_middle_bottom:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -752,7 +752,7 @@ matrix_middle_middle:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -804,7 +804,7 @@ matrix_middle_home:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -856,7 +856,7 @@ matrix_middle_top:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -908,7 +908,7 @@ matrix_index_bottom:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -970,7 +970,7 @@ matrix_index_middle:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -1022,7 +1022,7 @@ matrix_index_home:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -1074,7 +1074,7 @@ matrix_index_top:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -1126,7 +1126,7 @@ matrix_far_bottom:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -1188,7 +1188,7 @@ matrix_far_middle:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -1240,7 +1240,7 @@ matrix_far_home:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -1292,7 +1292,7 @@ matrix_far_top:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -1344,7 +1344,7 @@ thumbfan_first_bottom:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -1404,7 +1404,7 @@ thumbfan_second_bottom:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -1464,7 +1464,7 @@ thumbfan_third_bottom:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -1524,7 +1524,7 @@ thumbfan_addon_bottom:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -1584,7 +1584,7 @@ thumbfan_fourth_bottom:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
@@ -1644,7 +1644,7 @@ thumbfan_fifth_bottom:
       diode:
         type: diode
         nets:
-          from: '=column_net'
+          from: '=row_net'
           to: '=row_net'
         anchor:
           shift:
