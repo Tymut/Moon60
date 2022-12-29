@@ -1,5 +1,18 @@
 #include QMK_KEYBOARD_H
 
+//Layer name for each layer
+
+enum layer_names {
+  _QWERTY,
+  _LOWER_1,
+  _RAISE_2,
+  _ADJUST_3,
+  _COLEMAK_4,
+  _DVORAK_5
+};
+
+// Layers definition
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* QWERTY 0
  * ,-----------------------------------------.                    ,-----------------------------------------.
@@ -138,6 +151,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 )
 };
 
+// QMK LOGO
+
 #ifdef OLED_ENABLE
 
 // Draw to Oled
@@ -157,6 +172,42 @@ static void render_logo(void){
   render_logo();
 
   return false;
+}
+
+#endif
+
+// LAYERS
+
+#ifdef OLED_ENABLE
+
+// Draw to OLED
+bool oled_task_user() {
+    // Set cursor position
+    oled_set_cursor(0, 1);
+
+    // Switch on current active layer
+    switch (get_highest_layer(layer_state)) {
+        case _QWERTY :
+            oled_write("QWERTY", false);
+            break;
+        case _LOWER_1 :
+            oled_write("LOWER", false);
+            break;
+        case _RAISE_2 : 
+            oled_write("RAISE", false);
+            break;
+        case _ADJUST_3 :
+            oled_write("ADJUST", false);
+            break;
+        case _COLEMAK_4 :
+          oled_write("COLEMAK", false);
+            break;
+        case _DVORAK_5 :
+          oled_write("DVORAK", false);
+            break;
+    }
+
+    return false;
 }
 
 #endif
