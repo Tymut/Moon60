@@ -12,3 +12,4 @@ OLED_ENABLE = yes     # OLED display
 LTO_ENABLE = yes      
 OLED_DRIVER = SSD1306   # OLED driver
 SPLIT_KEYBOARD = yes    # Split keyboard
+WPM_ENABLE = yes # Enable WPM
