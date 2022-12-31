@@ -1,5 +1,18 @@
 #include QMK_KEYBOARD_H
 
+//Layer name for each layer
+
+enum layer_names {
+  _QWERTY,
+  _LOWER_1,
+  _RAISE_2,
+  _ADJUST_3,
+  _COLEMAK_4,
+  _DVORAK_5
+};
+
+// Layers definition
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* QWERTY 0
  * ,-----------------------------------------.                    ,-----------------------------------------.
@@ -16,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *            `----------------------------------'           '------''---------------------------'
  */
 
-[0] = LAYOUT(
+[_QWERTY] = LAYOUT(
   KC_ESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                           KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_EQL,
   KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                           KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,  KC_MINS,
   KC_LSFT,  KC_A,   KC_S,    KC_D,    KC_F,    KC_G,                           KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN,  KC_QUOT,
@@ -39,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *            `----------------------------------'           '------''---------------------------'
  */
 
-[1] = LAYOUT(
+[_LOWER_1] = LAYOUT(
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX , XXXXXXX,                 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   KC_F1,   KC_F2,   KC_F3,  KC_F4,   KC_F5,   KC_F6,                     KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
   KC_GRV, KC_EXLM,  KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                   KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_TILD,
@@ -62,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *            `----------------------------------'           '------''---------------------------' 
  */
 
-[2] = LAYOUT(
+[_RAISE_2] = LAYOUT(
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX , XXXXXXX,                 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,   KC_8,    KC_9,    KC_0,  XXXXXXX,
   KC_F1,   KC_F2,   KC_F3 ,  KC_F4,   KC_F5,   KC_F6,                       XXXXXXX, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX,
@@ -85,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * Adjust (Lower + Raise)
  */
 
-[3] = LAYOUT(
+[_ADJUST_3] = LAYOUT(
   TG(0),   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, TG(4),   XXXXXXX,                   XXXXXXX, TG(5),   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
@@ -107,7 +120,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *            `----------------------------------'           '------''---------------------------'
  */
 
-[4] = LAYOUT(
+[_COLEMAK_4] = LAYOUT(
   KC_ESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                            KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_GRV,
   KC_TAB,   KC_Q,   KC_W,    KC_F,    KC_P,    KC_G,                            KC_J,    KC_L,    KC_U,    KC_Y, KC_SCLN,  KC_MINS,
   KC_LSFT,  KC_A,   KC_R,    KC_S,    KC_T,    KC_D,                            KC_H,    KC_N,    KC_E,    KC_I,    KC_O,  KC_QUOT,
@@ -129,7 +142,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *            `----------------------------------'           '------''---------------------------'
  */
 
-[5] = LAYOUT(
+[_DVORAK_5] = LAYOUT(
   KC_ESC,   KC_1,   KC_2,    KC_3,    KC_4,    KC_5,                           KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_EQL,
   KC_TAB,   KC_QUOT, KC_COMMA, KC_DOT, KC_P,   KC_Y,                           KC_F,    KC_G,    KC_C,    KC_R,    KC_L,  KC_MINS,
   KC_LSFT,  KC_A,   KC_O,    KC_E,    KC_U,    KC_I,                           KC_D,    KC_H,    KC_T,    KC_N,    KC_S,  KC_SLSH,
@@ -138,22 +151,63 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 )
 };
 
+// QMK LOGO
+
 #ifdef OLED_ENABLE
 
 // Draw to Oled
-bool oled_task_user()
-{
+static void render_logo(void){
   // Define image Array
-  static const char qmk_logo [] PROGMEM = {
+  static const char PROGMEM qmk_logo[] = {
      0x80, 0x81, 0x82, 0x83, 0x84, 0x85, 0x86, 0x87, 0x88, 0x89, 0x8A, 0x8B, 0x8C, 0x8D, 0x8E, 0x8F, 0x90, 0x91, 0x92, 0x93, 0x94,
         0xA0, 0xA1, 0xA2, 0xA3, 0xA4, 0xA5, 0xA6, 0xA7, 0xA8, 0xA9, 0xAA, 0xAB, 0xAC, 0xAD, 0xAE, 0xAF, 0xB0, 0xB1, 0xB2, 0xB3, 0xB4,
         0xC0, 0xC1, 0xC2, 0xC3, 0xC4, 0xC5, 0xC6, 0xC7, 0xC8, 0xC9, 0xCA, 0xCB, 0xCC, 0xCD, 0xCE, 0xCF, 0xD0, 0xD1, 0xD2, 0xD3, 0xD4, 0x00
   };
   
   //Draw image to Oled
-  oled_write_raw_p(qmk_logo, sizeof(qmk_logo));
+  oled_write_P(qmk_logo, false);
+  }
   
+  bool oled_task_user(void){
+  render_logo();
+
   return false;
+}
+
+#endif
+
+// LAYERS
+
+#ifdef OLED_ENABLE
+
+// Draw to OLED
+bool oled_task_user() {
+    // Set cursor position
+    oled_set_cursor(0, 1);
+
+    // Switch on current active layer
+    switch (get_highest_layer(layer_state)) {
+        case _QWERTY :
+            oled_write("QWERTY", false);
+            break;
+        case _LOWER_1 :
+            oled_write("LOWER", false);
+            break;
+        case _RAISE_2 : 
+            oled_write("RAISE", false);
+            break;
+        case _ADJUST_3 :
+            oled_write("ADJUST", false);
+            break;
+        case _COLEMAK_4 :
+          oled_write("COLEMAK", false);
+            break;
+        case _DVORAK_5 :
+          oled_write("DVORAK", false);
+            break;
+    }
+
+    return false;
 }
 
 #endif
