@@ -172,6 +172,29 @@ static void render_logo(void){
   
   bool oled_task_user(void){
   render_logo();
+led_set_cursor(0, 1);
+
+    // Switch on current active layer
+    switch (get_highest_layer(layer_state)) {
+        case _QWERTY :
+            oled_write("QWERTY", false);
+            break;
+        case _LOWER_1 :
+            oled_write("LOWER", false);
+            break;
+        case _RAISE_2 : 
+            oled_write("RAISE", false);
+            break;
+        case _ADJUST_3 :
+            oled_write("ADJUST", false);
+            break;
+        case _COLEMAK_4 :
+          oled_write("COLEMAK", false);
+            break;
+        case _DVORAK_5 :
+          oled_write("DVORAK", false);
+            break;
+    }
 
   return false;
 }
@@ -206,42 +229,6 @@ static void render_logo(void){
 
 */
 
-// LAYERS
-
-#ifdef OLED_ENABLE
-
-// Draw to OLED
-bool oled_task_user() {
-    // Set cursor position
-    oled_set_cursor(0, 1);
-
-    // Switch on current active layer
-    switch (get_highest_layer(layer_state)) {
-        case _QWERTY :
-            oled_write("QWERTY", false);
-            break;
-        case _LOWER_1 :
-            oled_write("LOWER", false);
-            break;
-        case _RAISE_2 : 
-            oled_write("RAISE", false);
-            break;
-        case _ADJUST_3 :
-            oled_write("ADJUST", false);
-            break;
-        case _COLEMAK_4 :
-          oled_write("COLEMAK", false);
-            break;
-        case _DVORAK_5 :
-          oled_write("DVORAK", false);
-            break;
-    }
-
-    return false;
-}
-
-#endif
-
 // WPM FUNCTION (STABLE)
 
 #ifdef OLED_ENABLE
@@ -257,29 +244,6 @@ bool wpm_keycode_user(uint16_t keycode) {
     }
 
     return false;
-}
-
-#endif
-
-// WPM DECREASE (BETA)
-
-#ifdef OLED_ENABLE
-
-
-__attribute__((weak)) uint8_t wpm_regress_count(uint16_t keycode) {
-    bool weak_modded = (keycode >= QK_LCTL && keycode < QK_LSFT) || (keycode >= QK_RCTL && keycode < QK_RSFT);
-    
-    if ((keycode >= QK_MOD_TAP && keycode <= QK_MOD_TAP_MAX) || (keycode >= QK_LAYER_TAP && keycode <= QK_LAYER_TAP_MAX) || (keycode >= QK_MODS && keycode <= QK_MODS_MAX)) {
-        keycode = keycode & 0xFF;
-    } else if (keycode > 0xFF) {
-        keycode = 0;
-    }
-    if (((get_mods() | get_oneshot_mods()) & MOD_MASK_CTRL} || weak_modded) && (keycode == KC_DEL || keycode == KC_BSPC)) {
-        return WPM_ESTIMATED_WORD_SIZE;
-    }
-    if (keycode == KC_DEL || keycode == KC_BSPC) {
-        return 1;
-    }
 }
 
 #endif
