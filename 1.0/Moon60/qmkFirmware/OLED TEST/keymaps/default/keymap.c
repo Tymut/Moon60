@@ -151,6 +151,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 )
 };
 
+// OLED STUFF
+
 // MOON60 (LogoBIG32)
 
 #ifdef OLED_ENABLE
@@ -174,6 +176,8 @@ static void render_logo(void){
   render_logo();
 led_set_cursor(0, 1);
 
+  // LAYERS
+    
     // Switch on current active layer
     switch (get_highest_layer(layer_state)) {
         case _QWERTY :
@@ -197,6 +201,21 @@ led_set_cursor(0, 1);
     }
 
   return false;
+}
+
+// WPM FUNCTION (Stable)
+
+bool wpm_keycode_user(uint16_t keycode) {
+    if ((keycode >= QK_MOD_TAP && keycode <= QK_MOD_TAP_MAX) || (keycode >= QK_LAYER_TAP && keycode <= QK_LAYER_TAP_MAX) || (keycode >= QK_MODS && keycode <= QK_MODS_MAX)) {
+        keycode = keycode & 0xFF;
+    } else if (keycode > 0xFF) {
+        keycode = 0;
+    }
+    if ((keycode >= KC_A && keycode <= KC_0) || (keycode >= KC_TAB && keycode <= KC_SLSH)) {
+        return true;
+    }
+
+    return false;
 }
 
 #endif
@@ -228,22 +247,3 @@ static void render_logo(void){
 #endif
 
 */
-
-// WPM FUNCTION (STABLE)
-
-#ifdef OLED_ENABLE
-
-bool wpm_keycode_user(uint16_t keycode) {
-    if ((keycode >= QK_MOD_TAP && keycode <= QK_MOD_TAP_MAX) || (keycode >= QK_LAYER_TAP && keycode <= QK_LAYER_TAP_MAX) || (keycode >= QK_MODS && keycode <= QK_MODS_MAX)) {
-        keycode = keycode & 0xFF;
-    } else if (keycode > 0xFF) {
-        keycode = 0;
-    }
-    if ((keycode >= KC_A && keycode <= KC_0) || (keycode >= KC_TAB && keycode <= KC_SLSH)) {
-        return true;
-    }
-
-    return false;
-}
-
-#endif
