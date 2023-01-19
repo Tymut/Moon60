@@ -4,7 +4,11 @@
     "maintainer": "Nx0dle",
     "bootloader": "atmel-dfu",
     "processor": "atmega32u4",
-    "url": "",
+    "usb": {
+        "vid": "0x0100",
+        "pid": "0x0100",
+        "device_version": "1.0.0"
+    },
     "layouts": {
         "LAYOUT": {
             "layout": [

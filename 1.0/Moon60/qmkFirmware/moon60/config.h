@@ -2,12 +2,6 @@
 
 #include "config_common.h"
 
-/* USB Device descriptor parameter */
-#define VENDOR_ID    0xFEED
-#define PRODUCT_ID   0x0001
-#define DEVICE_VER   0x0001
-#define PRODUCT      moon60
-
 /* key matrix size */
 // Rows are doubled-up
 #define MATRIX_ROWS  10
@@ -27,4 +21,14 @@
 #define LOCKING_SUPPORT_ENABLE
 
 #define USE_SERIAL
-#define SOFT_SERIAL_PIN D1
+#define SOFT_SERIAL_PIN D2
+
+#define MATRIX_HAS_GHOST
+
+#define SPLIT_TRANSPORT_MIRROR
+#define SPLIT_WPM_ENABLE
+#define SPLIT_OLED_ENABLE
+#define SPLIT_LED_STATE_ENABLE
+#define SPLIT_LAYER_STATE_ENABLE
+
+
