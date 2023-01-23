@@ -36,8 +36,9 @@ points:                 # points - określa pozycjonowanie slotów na switche
         type: diode
         nets:
           from: =row_net
-          to: =row_net
+          to: =col_row
         anchor:
+          rotate: 180
           shift: [0, -9]
   zones:
     matrix:
