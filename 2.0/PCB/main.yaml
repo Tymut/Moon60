@@ -49,13 +49,17 @@ points:                 # points - określa pozycjonowanie slotów na switche
       columns:
         pinkie:
         ring:
-          stagger: 3
+          key:
+            stagger: 3
         middle:
-          stagger: 3
+          key:
+            stagger: 3
         index:
-          stagger: -3
+          key:
+            stagger: -3
         far:
-          stagger: -3
+          key:
+            stagger: -3
       rows:
         bottom:
         home:
@@ -67,14 +71,26 @@ points:                 # points - określa pozycjonowanie slotów na switche
         shift: [19,-19]
       columns:
         big:
-          stagger: 7
-          spread: 2
-          rotate: -35
           key:
-            height: 2
+            stagger: 5
+            spread: 2
+            rotate: -35
+            height: 2u
         top_small:
-          stagger: 9
+          key:
+            stagger: -3
+            rotate: -35
+            spread: 21
         bot_small:
-          stagger: -18
-          spread: 0
+          key:
+            rotate: -35
+            stagger: -16
+            spread: -11
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      asym: left
+      size: 14
+      bound: false
 
