@@ -1014,7 +1014,7 @@ cases:              # cases - określa konfigurację plików .stl
       operation: subtract
       extrude: 10.9
     - what: outline
-      name: cutout
+      name: frame_case_default_offset
       extrude: 5
     - what: outline
       name: bottom_case_walls
@@ -1028,7 +1028,7 @@ cases:              # cases - określa konfigurację plików .stl
       operation: subtract
       extrude: 10.9
     - what: outline
-      name: cutout
+      name: frame_case_default_offset
       extrude: 5
     - what: outline
       name: bottom_case_walls
