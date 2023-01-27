@@ -492,8 +492,8 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         adjust:
           rotate: 180
         params:
-          from: =column_net
-          to: =row_net
+          from: "{{column_net}}"
+          to: "{{row_net}}"
           keycaps: true
           reverse: true
           hotswap: true
@@ -501,8 +501,8 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         what: mx
         where: true
         params:
-          from: =row_net
-          to: =column_net
+          from: "{{row_net}}"
+          to: "{{column_net}}"
           keycaps: true
           reverse: true
           hotswap: true
@@ -510,9 +510,10 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         what: diode
         where: true
         params:
-          from: =row_net
-          to: =row_net
+          from: "{{row_net}}"
+          to: "{{colrow}}"
         adjust:
+          rotate: 180
           shift: [0, -9]
       mcu_l:
         what: promicro
@@ -626,8 +627,8 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         adjust:
           rotate: 180
         params:
-          from: =column_net
-          to: =row_net
+          from: "{{column_net}}"
+          to: "{{row_net}}"
           keycaps: true
           reverse: true
           hotswap: true
@@ -635,8 +636,8 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         what: mx
         where: true
         params:
-          from: =row_net
-          to: =column_net
+          from: "{{row_net}}"
+          to: "{{column_net}}"
           keycaps: true
           reverse: true
           hotswap: true
@@ -644,9 +645,10 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         what: diode
         where: true
         params:
-          from: =row_net
-          to: =row_net
+          from: "{{row_net}}"
+          to: "{{colrow}}"
         adjust:
+          rotate: 180
           shift: [0, -9]
       mcu_l:
         what: promicro
