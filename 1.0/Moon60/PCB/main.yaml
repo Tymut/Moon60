@@ -97,6 +97,12 @@ outlines:
         adjust:
           ref: matrix_far_bottom
           shift: [23,29]
+    promicro_rectangle_offset:
+      - what: rectangle
+        size: [47, 81]
+        adjust:
+          ref: matrix_far_bottom
+          shift: [23,29]
     promicro_platecutOLD:
       - what: rectangle
         size: [26, 57]
@@ -121,37 +127,43 @@ outlines:
         adjust:
           ref: matrix_outerpinkie_top
           shift: [-7,2]
+    topleftcorner_repair_offset:
+      - what: rectangle
+        size: [21,21]
+        adjust:
+          ref: matrix_outerpinkie_top
+          shift: [-7,2]
     screw_holesTRAYMOUNT:
       top_left:
         what: circle
         adjust:
           - ref: matrix_outerpinkie_top
             shift: [9.5,-9.5]
-        radius: 2.7
+        radius: 1.7
       bottom_left:
         what: circle
         adjust:
           - ref: matrix_outerpinkie_bottom
             shift: [9.5,9.5]
-        radius: 2.7
+        radius: 1.7
       bottom_right:
         what: circle
         adjust:
           - ref: matrix_far_bottom
             shift: [8,9.5]
-        radius: 2.7
+        radius: 1.7
       top_right:
         what: circle
         adjust:
           - ref: matrix_far_top
             shift: [8,-9.5]
-        radius: 2.7
+        radius: 1.7
       addon_outer:
         what: circle
         adjust:
           - ref: thumbfan_fourth_bottom
             shift: [13.5,9.5]
-        radius: 2.7
+        radius: 1.7
     mounting_holesTRAYMOUNT:
       top_left:
         what: circle
@@ -183,61 +195,92 @@ outlines:
           - ref: thumbfan_fourth_bottom
             shift: [13.5,9.5]
         radius: 2.5
+    mounting_holesTRAYMOUNT_case:
+      top_left:
+        what: circle
+        adjust:
+          - ref: matrix_outerpinkie_top
+            shift: [9.5,-9.5]
+        radius: 3
+      bottom_left:
+        what: circle
+        adjust:
+          - ref: matrix_outerpinkie_bottom
+            shift: [9.5,9.5]
+        radius: 3
+      bottom_right:
+        what: circle
+        adjust:
+          - ref: matrix_far_bottom
+            shift: [8,9.5]
+        radius: 3
+      top_right:
+        what: circle
+        adjust:
+          - ref: matrix_far_top
+            shift: [8,-9.5]
+        radius: 3
+      addon_outer:
+        what: circle
+        adjust:
+          - ref: thumbfan_fourth_bottom
+            shift: [13.5,9.5]
+        radius: 3
     screw_holesTOPMOUNT:
       top_left:
         what: circle
         adjust:
           - ref: matrix_outerpinkie_top
             shift: [-12.5,9]
-        radius: 3.25
+        radius: 1.7
       bottom_left:
         what: circle
         adjust:
           - ref: matrix_outerpinkie_bottom
             shift: [-12.5,-11]
-        radius: 3.25
+        radius: 1.7
       bottom_leftMiddle:
         what: circle
         adjust:
           - ref: thumbfan_first_bottom
             shift: [-11,-12.5]
-        radius: 3.25
+        radius: 1.7
       bottom_rightMiddle:
         what: circle
         adjust:
           - ref: thumbfan_third_bottom
             shift: [-11,-12.5]
-        radius: 3.25
+        radius: 1.7
       bottom_right:
         what: circle
         adjust:
           - ref: thumbfan_fifth_bottom
             shift: [12.5,-11.5]
-        radius: 3.25
+        radius: 1.7
       bottom_rightOuter:
         what: circle
         adjust:
           - ref: thumbfan_fifth_bottom
             shift: [12.5,11.5]
-        radius: 3.25
+        radius: 1.7
       top_right:
         what: circle
         adjust:
           - ref: matrix_far_top
             shift: [42,-35]
-        radius: 3.25
+        radius: 1.7
       top_rightMiddle:
         what: circle
         adjust:
           - ref: matrix_index_top
             shift: [0,21]
-        radius: 3.25
+        radius: 1.7
       top_leftMiddle:
         what: circle
         adjust:
           - ref: matrix_ring_top
             shift: [10,21]
-        radius: 3.25
+        radius: 1.7
     mounting_holesTOPMOUNT:
       top_left:
         what: circle
@@ -293,6 +336,61 @@ outlines:
           - ref: matrix_ring_top
             shift: [10,21]
         radius: 2.5
+    mounting_holesTOPMOUNT_case:
+      top_left:
+        what: circle
+        adjust:
+          - ref: matrix_outerpinkie_top
+            shift: [-12.5,9]
+        radius: 3
+      bottom_left:
+        what: circle
+        adjust:
+          - ref: matrix_outerpinkie_bottom
+            shift: [-12.5,-11]
+        radius: 3
+      bottom_leftMiddle:
+        what: circle
+        adjust:
+          - ref: thumbfan_first_bottom
+            shift: [-11,-12.5]
+        radius: 3
+      bottom_rightMiddle:
+        what: circle
+        adjust:
+          - ref: thumbfan_third_bottom
+            shift: [-11,-12.5]
+        radius: 3
+      bottom_right:
+        what: circle
+        adjust:
+          - ref: thumbfan_fifth_bottom
+            shift: [12.5,-11.5]
+        radius: 3
+      bottom_rightOuter:
+        what: circle
+        adjust:
+          - ref: thumbfan_fifth_bottom
+            shift: [12.5,11.5]
+        radius: 3
+      top_right:
+        what: circle
+        adjust:
+          - ref: matrix_far_top
+            shift: [42,-35]
+        radius: 3
+      top_rightMiddle:
+        what: circle
+        adjust:
+          - ref: matrix_index_top
+            shift: [0,21]
+        radius: 3
+      top_leftMiddle:
+        what: circle
+        adjust:
+          - ref: matrix_ring_top
+            shift: [10,21]
+        radius: 3
     raw:
       - what: rectangle
         where: true
@@ -347,6 +445,18 @@ outlines:
         adjust:
           ref: matrix_middle_home
           shift: [25,-125.8]
+    circle_top_offset:
+      - what: circle
+        radius: 154.68
+        adjust:
+          ref: matrix_middle_home
+          shift: [5,-115.5]
+      - what: rectangle
+        size: [370,295.6]
+        operation: subtract
+        adjust:
+          ref: matrix_middle_home
+          shift: [25,-130.3]
     frame:
       - what: polygon
         points:
@@ -413,6 +523,42 @@ outlines:
         fillet: 7
       - what: outline
         name: circle_top_wall
+    frame_case_offset:
+      - what: polygon
+        points:
+          - ref: matrix_outerpinkie_top
+            shift: [-17.5,12.5]
+          - ref: matrix_outerpinkie_bottom
+            shift: [-17.5,-17.5]
+          - ref: matrix_pinkie_bottom
+            shift: [-0.25,-17.5]
+          - ref: thumbfan_first_bottom
+            shift: [-12.25,-17.5]
+          - ref: thumbfan_second_bottom
+            shift: [-2.25,-17.5]
+          - ref: thumbfan_third_bottom
+            shift: [-13.25,-17.5]
+          - ref: thumbfan_third_bottom
+            shift: [28.75,-17.5]
+          - ref: matrix_far_bottom
+            shift: [46.5,-13]
+          - ref: matrix_far_top
+            shift: [46.5,12.5]
+      - what: rectangle
+        size: [31,37.5]
+        adjust:
+          ref: thumbfan_fifth_bottom
+          shift: [5,0.25]
+    frame_case_offset_fillet:
+      - what: outline
+        name: frame_case_offset
+        fillet: 7
+    frame_case_offset_fillet_arch:
+      - what: outline
+        name: frame_case_offset
+        fillet: 7
+      - what: outline
+        name: circle_top_offset
     cutout:
       - what: outline
         name: raw
@@ -421,6 +567,13 @@ outlines:
         operation: add
       - what: outline
         name: circle_top
+    frame_case_default_offset:
+      - what: outline
+        name: topleftcorner_repair_offset
+      - what: outline
+        name: promicro_rectangle_offset
+      - what: outline
+        name: frame_case_offset_fillet_arch
     bottom_case_walls:
       walls:
         what: outline
@@ -430,7 +583,7 @@ outlines:
         name: circle_top_wall
       cutout:
         what: outline
-        name: cutout
+        name: frame_case_default_offset
         operation: subtract
     top_frame:
       main:
@@ -836,7 +989,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           side: F
           from: Bplus
           to: RAW
-cases:                 # cases - określa konfigurację plików .stl
+cases:              # cases - określa konfigurację plików .stl
   plateTRAY:
     - what: outline
       name: plate_TRAYMOUNT
@@ -847,12 +1000,36 @@ cases:                 # cases - określa konfigurację plików .stl
       extrude: 2.4
   top_frame:
     - what: outline
+      name: bottom_case_walls
+      extrude: 12.5
+    - what: outline
       name: top_frame
       extrude: 4
-  bottom_case:
+  bottom_caseTOP:
+    - what: outline
+      name: mounting_holesTOPMOUNT_case
+      extrude: 10.9
+    - what: outline
+      name: screw_holesTOPMOUNT
+      operation: subtract
+      extrude: 10.9
     - what: outline
       name: cutout
-      extrude: 4
+      extrude: 5
     - what: outline
       name: bottom_case_walls
-      extrude: 8
+      extrude: 12.5
+  bottom_caseTRAY:
+    - what: outline
+      name: mounting_holesTRAYMOUNT_case
+      extrude: 10.9
+    - what: outline
+      name: screw_holesTRAYMOUNT
+      operation: subtract
+      extrude: 10.9
+    - what: outline
+      name: cutout
+      extrude: 5
+    - what: outline
+      name: bottom_case_walls
+      extrude: 12.5
