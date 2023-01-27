@@ -96,25 +96,25 @@ outlines:
         size: [46, 80]
         adjust:
           ref: matrix_far_bottom
-          shift: [0,-11]
+          shift: [23,29]
     promicro_platecutOLD:
       - what: rectangle
         size: [26, 57]
         adjust:
           ref: matrix_far_bottom
-          shift: [12,10]
+          shift: [25,38.5]
     promicro_platecut:
       - what: rectangle
         size: [40, 60]
         adjust:
           ref: matrix_far_bottom
-          shift: [10.5,25.5]
+          shift: [30.5,55.5]
     topleftcorner_repair:
       - what: rectangle
         size: [20,20]
         adjust:
           ref: matrix_outerpinkie_top
-          shift: [-17,-8]
+          shift: [-7,2]
     screw_holesTRAYMOUNT:
       top_left:
         what: circle
@@ -328,7 +328,7 @@ outlines:
         operation: subtract
         adjust:
           ref: matrix_middle_home
-          shift: [-160,-278.6]
+          shift: [25,-130.8]
     frame:
       - what: polygon
         points:
@@ -354,7 +354,7 @@ outlines:
         size: [30,36.5]
         adjust:
           ref: thumbfan_fifth_bottom
-          shift: [-10,-18]
+          shift: [5,0.25]
     frame_fillet:
       - what: outline
         name: frame
