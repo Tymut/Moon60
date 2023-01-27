@@ -109,6 +109,12 @@ outlines:
         adjust:
           ref: matrix_far_bottom
           shift: [30.5,55.5]
+    promicro_window:
+      - what: rectangle
+        size: [20, 43]
+        adjust:
+          ref: matrix_far_bottom
+          shift: [22.5,49.25]
     topleftcorner_repair:
       - what: rectangle
         size: [20,20]
@@ -329,6 +335,18 @@ outlines:
         adjust:
           ref: matrix_middle_home
           shift: [25,-130.8]
+    circle_top_wall:
+      - what: circle
+        radius: 154.68
+        adjust:
+          ref: matrix_middle_home
+          shift: [5,-111]
+      - what: rectangle
+        size: [370,295.6]
+        operation: subtract
+        adjust:
+          ref: matrix_middle_home
+          shift: [25,-125.8]
     frame:
       - what: polygon
         points:
@@ -359,6 +377,42 @@ outlines:
       - what: outline
         name: frame
         fillet: 7
+    frame_walls:
+      - what: polygon
+        points:
+          - ref: matrix_outerpinkie_top
+            shift: [-22,17.3]
+          - ref: matrix_outerpinkie_bottom
+            shift: [-22,-22]
+          - ref: matrix_pinkie_bottom
+            shift: [-2.5,-22]
+          - ref: thumbfan_first_bottom
+            shift: [-14.5,-22]
+          - ref: thumbfan_second_bottom
+            shift: [-4.5,-22]
+          - ref: thumbfan_third_bottom
+            shift: [-15.5,-22]
+          - ref: thumbfan_third_bottom
+            shift: [26.5,-22]
+          - ref: matrix_far_bottom
+            shift: [51,-13]
+          - ref: matrix_far_top
+            shift: [51,17.3]
+      - what: rectangle
+        size: [40,46.5]
+        adjust:
+          ref: thumbfan_fifth_bottom
+          shift: [5,0.25]
+    frame_walls_fillet:
+      - what: outline
+        name: frame_walls
+        fillet: 7
+    frame_walls_fillet_arch:
+      - what: outline
+        name: frame_walls
+        fillet: 7
+      - what: outline
+        name: circle_top_wall
     cutout:
       - what: outline
         name: raw
@@ -367,21 +421,44 @@ outlines:
         operation: add
       - what: outline
         name: circle_top
-    plate_TRAYMOUNT:
-      main:
+    bottom_case_walls:
+      walls:
+        what: outline
+        name: frame_walls_fillet
+      arch:
+        what: outline
+        name: circle_top_wall
+      cutout:
         what: outline
         name: cutout
-      switches:
-        what: outline
-        name: switches_slots
         operation: subtract
-      cut:
+    top_frame:
+      main:
         what: outline
-        name: promicro_platecut
+        name: frame_walls_fillet_arch
+      keycaps:
+        what: rectangle
+        where: true
+        size: 20
+        bound: false
         operation: subtract
-      screw_holes:
+      cut1:
+        what: rectangle
+        size: [20,20]
+        operation: subtract
+        adjust:
+          ref: matrix_middle_bottom
+          shift: [0,-10]
+      cut2:
+        what: rectangle
+        size: [19,10]
+        operation: subtract
+        adjust:
+          ref: matrix_far_bottom
+          shift: [-5.5,-5]
+      wnidow:
         what: outline
-        name: screw_holesTRAYMOUNT
+        name: promicro_window
         operation: subtract
     plate_TOPMOUNT:
       main:
@@ -398,6 +475,22 @@ outlines:
       screw_holes:
         what: outline
         name: screw_holesTOPMOUNT
+        operation: subtract
+    plate_TRAYMOUNT:
+      main:
+        what: outline
+        name: cutout
+      switches:
+        what: outline
+        name: switches_slots
+        operation: subtract
+      cut:
+        what: outline
+        name: promicro_platecut
+        operation: subtract
+      screw_holes:
+        what: outline
+        name: screw_holesTRAYMOUNT
         operation: subtract
     plate_with_keycaps:
       main:
@@ -752,3 +845,14 @@ cases:                 # cases - określa konfigurację plików .stl
     - what: outline
       name: plate_TOPMOUNT
       extrude: 2.4
+  top_frame:
+    - what: outline
+      name: top_frame
+      extrude: 4
+  bottom_case:
+    - what: outline
+      name: cutout
+      extrude: 4
+    - what: outline
+      name: bottom_case_walls
+      extrude: 8
