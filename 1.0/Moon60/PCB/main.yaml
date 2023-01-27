@@ -11,34 +11,6 @@
 points:                 # points - określa pozycjonowanie slotów na switche
   key:
     padding: u
-    footprints:
-      choc_hotswap:
-        type: choc
-        anchor:
-          rotate: 180
-        nets:
-          from: =column_net
-          to: =row_net
-        params:
-          keycaps: true
-          reverse: true
-          hotswap: true
-      mx_hotswap:
-        type: mx
-        nets:
-          from: =row_net
-          to: =column_net
-        params:
-          keycaps: true
-          reverse: true
-          hotswap: true
-      diode:
-        type: diode
-        nets:
-          from: =row_net
-          to: =row_net
-        anchor:
-          shift: [0, -9]
   zones:
     matrix:
       key:
@@ -55,19 +27,19 @@ points:                 # points - określa pozycjonowanie slotów na switche
         ring:
           key:
             column_net: P19
-          stagger: 7
+            stagger: 7
         middle:
           key:
             column_net: P18
-          stagger: 7
+            stagger: 7
         index:
           key:
             column_net: P15
-          stagger: -7
+            stagger: -7
         far:
           key:
             column_net: P14
-          stagger: -7
+            stagger: -7
       rows:
         bottom:
           row_net: P7
@@ -85,222 +57,280 @@ points:                 # points - określa pozycjonowanie slotów na switche
         first:
           key:
             column_net: P21
-          stagger: 8
+            stagger: 8
         second:
           key:
             column_net: P20
         third:
           key:
             column_net: P19
-          stagger: -7
+            stagger: -7
         addon:
           key:
             column_net: P18
-          stagger: 35
-          spread: 25
+            stagger: 35
+            spread: 25
         fourth:
           key:
             column_net: P15
-          stagger: -30
-          spread: 0
-          rotate: -25
+            stagger: -30
+            spread: 0
+            splay: -25
         fifth:
           key:
             column_net: P14
-          rotate: -25
-          stagger: -5
-          spread: 22
+            stagger: -5
+            spread: 22
+            splay: -25
       rows:
         bottom:
           row_net: P8
-outlines:                 # outlines - określa krawędzie układu scalonegoo
-  exports:
+outlines:
     raw_0:
-      - type: keys
-        side: left
+      - what: rectangle
+        where: true
+        asym: left
         size: [18,18]
     promicro_rectangle:
-      - type: rectangle
+      - what: rectangle
         size: [46, 80]
-        anchor:
+        adjust:
           ref: matrix_far_bottom
           shift: [0,-11]
     promicro_platecutOLD:
-      - type: rectangle
+      - what: rectangle
         size: [26, 57]
-        anchor:
+        adjust:
           ref: matrix_far_bottom
           shift: [12,10]
     promicro_platecut:
-      - type: rectangle
+      - what: rectangle
         size: [40, 60]
-        anchor:
+        adjust:
           ref: matrix_far_bottom
           shift: [10.5,25.5]
     topleftcorner_repair:
-      - type: rectangle
+      - what: rectangle
         size: [20,20]
-        anchor:
+        adjust:
           ref: matrix_outerpinkie_top
           shift: [-17,-8]
     screw_holesTRAYMOUNT:
       top_left:
-        type: circle
-        anchor:
+        what: circle
+        adjust:
           - ref: matrix_outerpinkie_top
             shift: [9.5,-9.5]
         radius: 2.7
       bottom_left:
-        type: circle
-        anchor:
+        what: circle
+        adjust:
           - ref: matrix_outerpinkie_bottom
             shift: [9.5,9.5]
         radius: 2.7
       bottom_right:
-        type: circle
-        anchor:
+        what: circle
+        adjust:
           - ref: matrix_far_bottom
             shift: [8,9.5]
         radius: 2.7
       top_right:
-        type: circle
-        anchor:
+        what: circle
+        adjust:
           - ref: matrix_far_top
             shift: [8,-9.5]
         radius: 2.7
       addon_outer:
-        type: circle
-        anchor:
+        what: circle
+        adjust:
           - ref: thumbfan_fourth_bottom
             shift: [13.5,9.5]
         radius: 2.7
     mounting_holesTRAYMOUNT:
-      $extends: outlines.exports.screw_holesTRAYMOUNT
       top_left:
+        what: circle
+        adjust:
+          - ref: matrix_outerpinkie_top
+            shift: [9.5,-9.5]
         radius: 2.5
       bottom_left:
+        what: circle
+        adjust:
+          - ref: matrix_outerpinkie_bottom
+            shift: [9.5,9.5]
         radius: 2.5
       bottom_right:
+        what: circle
+        adjust:
+          - ref: matrix_far_bottom
+            shift: [8,9.5]
         radius: 2.5
       top_right:
+        what: circle
+        adjust:
+          - ref: matrix_far_top
+            shift: [8,-9.5]
         radius: 2.5
       addon_outer:
+        what: circle
+        adjust:
+          - ref: thumbfan_fourth_bottom
+            shift: [13.5,9.5]
         radius: 2.5
     screw_holesTOPMOUNT:
       top_left:
-        type: circle
-        anchor:
+        what: circle
+        adjust:
           - ref: matrix_outerpinkie_top
             shift: [-12.5,9]
         radius: 3.25
       bottom_left:
-        type: circle
-        anchor:
+        what: circle
+        adjust:
           - ref: matrix_outerpinkie_bottom
             shift: [-12.5,-11]
         radius: 3.25
       bottom_leftMiddle:
-        type: circle
-        anchor:
+        what: circle
+        adjust:
           - ref: thumbfan_first_bottom
             shift: [-11,-12.5]
         radius: 3.25
       bottom_rightMiddle:
-        type: circle
-        anchor:
+        what: circle
+        adjust:
           - ref: thumbfan_third_bottom
             shift: [-11,-12.5]
         radius: 3.25
       bottom_right:
-        type: circle
-        anchor:
+        what: circle
+        adjust:
           - ref: thumbfan_fifth_bottom
             shift: [12.5,-11.5]
         radius: 3.25
       bottom_rightOuter:
-        type: circle
-        anchor:
+        what: circle
+        adjust:
           - ref: thumbfan_fifth_bottom
             shift: [12.5,11.5]
         radius: 3.25
       top_right:
-        type: circle
-        anchor:
+        what: circle
+        adjust:
           - ref: matrix_far_top
             shift: [42,-35]
         radius: 3.25
       top_rightMiddle:
-        type: circle
-        anchor:
+        what: circle
+        adjust:
           - ref: matrix_index_top
             shift: [0,21]
         radius: 3.25
       top_leftMiddle:
-        type: circle
-        anchor:
+        what: circle
+        adjust:
           - ref: matrix_ring_top
             shift: [10,21]
         radius: 3.25
     mounting_holesTOPMOUNT:
-      $extends: outlines.exports.screw_holesTOPMOUNT
       top_left:
+        what: circle
+        adjust:
+          - ref: matrix_outerpinkie_top
+            shift: [-12.5,9]
         radius: 2.5
       bottom_left:
+        what: circle
+        adjust:
+          - ref: matrix_outerpinkie_bottom
+            shift: [-12.5,-11]
         radius: 2.5
       bottom_leftMiddle:
+        what: circle
+        adjust:
+          - ref: thumbfan_first_bottom
+            shift: [-11,-12.5]
         radius: 2.5
       bottom_rightMiddle:
+        what: circle
+        adjust:
+          - ref: thumbfan_third_bottom
+            shift: [-11,-12.5]
         radius: 2.5
       bottom_right:
+        what: circle
+        adjust:
+          - ref: thumbfan_fifth_bottom
+            shift: [12.5,-11.5]
         radius: 2.5
       bottom_rightOuter:
+        what: circle
+        adjust:
+          - ref: thumbfan_fifth_bottom
+            shift: [12.5,11.5]
         radius: 2.5
       top_right:
+        what: circle
+        adjust:
+          - ref: matrix_far_top
+            shift: [42,-35]
         radius: 2.5
       top_rightMiddle:
+        what: circle
+        adjust:
+          - ref: matrix_index_top
+            shift: [0,21]
         radius: 2.5
       top_leftMiddle:
+        what: circle
+        adjust:
+          - ref: matrix_ring_top
+            shift: [10,21]
         radius: 2.5
     raw:
-      - type: keys
-        side: left
+      - what: rectangle
+        where: true
+        asym: left
         size: [1cx, 1cx]
-      - type: outline
+      - what: outline
         name: promicro_rectangle
-      - type: outline
+      - what: outline
         name: topleftcorner_repair
     switches_slots:
       main:
-        type: keys
-        side: left
+        what: rectangle
+        where: true
+        asym: left
         size: 14.02
         bound: false
     keycaps_choc:
       main:
-        type: keys
-        side: left
+        what: rectangle
+        where: true
+        asym: left
         size: [1cx - 0.5, 1cy - 0.5]
         bound: false
     keycaps_mx:
       main:
-        type: keys
-        side: left
+        what: rectangle
+        where: true
+        asym: left
         size: [18,18]
         bound: false
     circle_top:
-      - type: circle
+      - what: circle
         radius: 154.68
-        anchor:
+        adjust:
           ref: matrix_middle_home
           shift: [5,-116]
-      - type: rectangle
+      - what: rectangle
         size: [370,295.6]
         operation: subtract
-        anchor:
+        adjust:
           ref: matrix_middle_home
           shift: [-160,-278.6]
     frame:
-      - type: polygon
+      - what: polygon
         points:
           - ref: matrix_outerpinkie_top
             shift: [-17,12]
@@ -320,102 +350,103 @@ outlines:                 # outlines - określa krawędzie układu scalonegoo
             shift: [46,-13]
           - ref: matrix_far_top
             shift: [46,12]
-      - type: rectangle
+      - what: rectangle
         size: [30,36.5]
-        anchor:
+        adjust:
           ref: thumbfan_fifth_bottom
           shift: [-10,-18]
     frame_fillet:
-      - type: outline
+      - what: outline
         name: frame
         fillet: 7
     cutout:
-      - type: outline
+      - what: outline
         name: raw
-      - type: outline
+      - what: outline
         name: frame_fillet
         operation: add
-      - type: outline
+      - what: outline
         name: circle_top
     plate_TRAYMOUNT:
       main:
-        type: outline
+        what: outline
         name: cutout
       switches:
-        type: outline
+        what: outline
         name: switches_slots
         operation: subtract
       cut:
-        type: outline
+        what: outline
         name: promicro_platecut
         operation: subtract
       screw_holes:
-        type: outline
+        what: outline
         name: screw_holesTRAYMOUNT
         operation: subtract
     plate_TOPMOUNT:
       main:
-        type: outline
+        what: outline
         name: cutout
       switches:
-        type: outline
+        what: outline
         name: switches_slots
         operation: subtract
       cut:
-        type: outline
+        what: outline
         name: promicro_platecut
         operation: subtract
       screw_holes:
-        type: outline
+        what: outline
         name: screw_holesTOPMOUNT
         operation: subtract
     plate_with_keycaps:
       main:
-        type: outline
+        what: outline
         name: cutout
       keycaps:
-        type: keys
-        side: left
+        what: rectangle
+        where: true
+        asym: left
         size: [18,18]
         operation: subtract
       cut:
-        type: outline
+        what: outline
         name: promicro_platecut
         operation: subtract
     pcb_TRAYMOUNT:
       main:
-        type: outline
+        what: outline
         name: cutout
       sockets:
-        type: outline
+        what: outline
         name: raw_0
         operation: subtract
       mounting_holes:
-        type: outline
+        what: outline
         name: mounting_holesTRAYMOUNT
         operation: subtract
     pcb_TOPMOUNT:
       main:
-        type: outline
+        what: outline
         name: cutout
       sockets:
-        type: outline
+        what: outline
         name: raw_0
         operation: subtract
       mounting_holes:
-        type: outline
+        what: outline
         name: mounting_holesTOPMOUNT
         operation: subtract
     pcb_help:
       main:
-        type: outline
+        what: outline
         name: frame
       sockets:
-        type: outline
+        what: outline
         name: raw_0
         operation: subtract
       top:
-        type: outline
+        what: outline
         name: circle_top
 pcbs:                 # pcbs - określa konfigurację która ma być przekonwertowana do programu KiCad
   sizing_help:
@@ -455,59 +486,84 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
       mounting_holes:
         outline: mounting_holesTRAYMOUNT
     footprints:
+      choc_hotswap:
+        what: choc
+        where: true
+        adjust:
+          rotate: 180
+        params:
+          from: =column_net
+          to: =row_net
+          keycaps: true
+          reverse: true
+          hotswap: true
+      mx_hotswap:
+        what: mx
+        where: true
+        params:
+          from: =row_net
+          to: =column_net
+          keycaps: true
+          reverse: true
+          hotswap: true
+      diode:
+        what: diode
+        where: true
+        params:
+          from: =row_net
+          to: =row_net
+        adjust:
+          shift: [0, -9]
       mcu_l:
-        type: promicro
+        what: promicro
         params:
           orientation: up
-        anchor:
+        adjust:
           ref: matrix_far_top
           shift: [20,-2]
           rotate: 270
       mcu_r:
-        type: promicro
+        what: promicro
         params:
           orientation: down
-        anchor:
+        adjust:
           ref: matrix_far_top
           shift: [22.5,-3.25]
           rotate: 270
       trrs:
-        type: trrs
-        nets:
-          A: GND
-          B: GND
-          C: P2
-          D: VCC
-        anchor:
+        what: trrs
+        adjust:
           ref: matrix_far_top
           shift: [38,9]
         params:
           reverse: true
           symmetric: true
+          A: GND
+          B: GND
+          C: P2
+          D: VCC
       reset:
-        type: button
-        anchor:
+        what: button
+        adjust:
           ref:
             - matrix_far_home
           shift: [42,10]
           rotate: 270
         params:
-          variant: 2_pin_th
-        nets:
           from: GND
           to: RST
       slider:
-        type: slider
-        anchor:
+        what: slider
+        adjust:
           ref: matrix_far_home
           shift: [42,0.5]
           rotate: -90
-        nets:
+        params:
           from: pos
           to: RAW
       bat_plus:
-        type: pad
-        anchor:
+        what: pad
+        adjust:
           ref: matrix_far_top
           shift: [21,-8.25]
           rotate: 90
@@ -517,11 +573,10 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           width: 1.5
           height: 1.5
           text: "B+"
-        nets:
           net: Bplus
       bat_minus:
-        type: pad
-        anchor:
+        what: pad
+        adjust:
           ref: matrix_far_top
           shift: [24,-8.25]
           rotate: 90
@@ -531,28 +586,25 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           width: 1.5
           height: 1.5
           text: "B-"
-        nets:
           net: GND
       jumper_l:
-        type: jumper
-        anchor:
+        what: jumper
+        adjust:
           ref: matrix_far_home
           shift: [35,9]
           rotate: 270
         params:
           side: B
-        nets:
           from: Bplus
           to: RAW
       jumper_r:
-        type: jumper
-        anchor:
+        what: jumper
+        adjust:
           ref: matrix_far_home
           shift: [35,9]
           rotate: 270
         params:
           side: F
-        nets:
           from: Bplus
           to: RAW
   moon60Top:
@@ -568,59 +620,84 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
       mounting_holes:
         outline: mounting_holesTOPMOUNT
     footprints:
+      choc_hotswap:
+        what: choc
+        where: true
+        adjust:
+          rotate: 180
+        params:
+          from: =column_net
+          to: =row_net
+          keycaps: true
+          reverse: true
+          hotswap: true
+      mx_hotswap:
+        what: mx
+        where: true
+        params:
+          from: =row_net
+          to: =column_net
+          keycaps: true
+          reverse: true
+          hotswap: true
+      diode:
+        what: diode
+        where: true
+        params:
+          from: =row_net
+          to: =row_net
+        adjust:
+          shift: [0, -9]
       mcu_l:
-        type: promicro
+        what: promicro
         params:
           orientation: up
-        anchor:
+        adjust:
           ref: matrix_far_top
           shift: [20,-2]
           rotate: 270
       mcu_r:
-        type: promicro
+        what: promicro
         params:
           orientation: down
-        anchor:
+        adjust:
           ref: matrix_far_top
           shift: [22.5,-3.25]
           rotate: 270
       trrs:
-        type: trrs
-        nets:
-          A: GND
-          B: GND
-          C: P2
-          D: VCC
-        anchor:
+        what: trrs
+        adjust:
           ref: matrix_far_top
           shift: [38,9]
         params:
           reverse: true
           symmetric: true
+          A: GND
+          B: GND
+          C: P2
+          D: VCC
       reset:
-        type: button
-        anchor:
+        what: button
+        adjust:
           ref:
             - matrix_far_home
           shift: [42,10]
           rotate: 270
         params:
-          variant: 2_pin_th
-        nets:
           from: GND
           to: RST
       slider:
-        type: slider
-        anchor:
+        what: slider
+        adjust:
           ref: matrix_far_home
           shift: [42,0.5]
           rotate: -90
-        nets:
+        params:
           from: pos
           to: RAW
       bat_plus:
-        type: pad
-        anchor:
+        what: pad
+        adjust:
           ref: matrix_far_top
           shift: [21,-8.25]
           rotate: 90
@@ -630,11 +707,10 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           width: 1.5
           height: 1.5
           text: "B+"
-        nets:
           net: Bplus
       bat_minus:
-        type: pad
-        anchor:
+        what: pad
+        adjust:
           ref: matrix_far_top
           shift: [24,-8.25]
           rotate: 90
@@ -644,36 +720,33 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           width: 1.5
           height: 1.5
           text: "B-"
-        nets:
           net: GND
       jumper_l:
-        type: jumper
-        anchor:
+        what: jumper
+        adjust:
           ref: matrix_far_home
           shift: [35,9]
           rotate: 270
         params:
           side: B
-        nets:
           from: Bplus
           to: RAW
       jumper_r:
-        type: jumper
-        anchor:
+        what: jumper
+        adjust:
           ref: matrix_far_home
           shift: [35,9]
           rotate: 270
         params:
           side: F
-        nets:
           from: Bplus
           to: RAW
 cases:                 # cases - określa konfigurację plików .stl
   plateTRAY:
-    - type: outline
+    - what: outline
       name: plate_TRAYMOUNT
       extrude: 2.4
   plateTOP:
-    - type: outline
+    - what: outline
       name: plate_TOPMOUNT
       extrude: 2.4
