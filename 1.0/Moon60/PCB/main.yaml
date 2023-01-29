@@ -8,6 +8,7 @@
   # U = 19.05
   # u = 19
   # Jednostki podawane są w milimetrach
+
 points:                 # points - określa pozycjonowanie slotów na switche
   key:
     padding: u
