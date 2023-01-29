@@ -1016,7 +1016,7 @@ cases:              # cases - określa konfigurację plików .stl
       extrude: 10.9
     - what: outline
       name: frame_case_default_offset
-      extrude: 5
+      extrude: 3
     - what: outline
       name: bottom_case_walls
       extrude: 12.5
@@ -1030,7 +1030,7 @@ cases:              # cases - określa konfigurację plików .stl
       extrude: 10.9
     - what: outline
       name: frame_case_default_offset
-      extrude: 5
+      extrude: 3
     - what: outline
       name: bottom_case_walls
       extrude: 12.5
