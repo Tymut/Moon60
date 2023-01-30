@@ -921,10 +921,10 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         params:
           reverse: true
           symmetric: true
-          A: GND
-          B: GND
-          C: P2
-          D: VCC
+          A: VCC
+          B: VCC
+          C: GND
+          D: P0
       reset:
         what: button
         adjust:
