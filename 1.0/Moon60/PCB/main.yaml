@@ -751,9 +751,8 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         adjust:
           rotate: 180
         params:
-          from: "{{column_net}}"
-          to: "{{row_net}}"
-          keycaps: true
+          from: "{{row_net}}"
+          to: "{{column_net}}"
           reverse: true
           hotswap: true
       mx_hotswap:
@@ -762,7 +761,6 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         params:
           from: "{{row_net}}"
           to: "{{column_net}}"
-          keycaps: true
           reverse: true
           hotswap: true
       diode:
@@ -770,7 +768,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         where: true
         params:
           from: "{{row_net}}"
-          to: "{{colrow}}"
+          to: "{{column_net}}"
         adjust:
           rotate: 180
           shift: [0, -9]
@@ -787,7 +785,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           shift: [38,9]
         params:
           reverse: true
-          symmetric: true
+          symmetric: false
           A: VCC
           B: VCC
           C: GND
@@ -857,6 +855,15 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           side: F
           from: Bplus
           to: RAW
+      oled:
+        what: oled
+        adjust:
+          ref: matrix_far_top
+          shift: [14,-21.5]
+          rotate: 90
+        params:
+          SDA: P2
+          SCL: P3
   moon60Top:
     outlines:
       matrix:
@@ -876,9 +883,8 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         adjust:
           rotate: 180
         params:
-          from: "{{column_net}}"
-          to: "{{row_net}}"
-          keycaps: true
+          from: "{{row_net}}"
+          to: "{{column_net}}"
           reverse: true
           hotswap: true
       mx_hotswap:
@@ -887,7 +893,6 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         params:
           from: "{{row_net}}"
           to: "{{column_net}}"
-          keycaps: true
           reverse: true
           hotswap: true
       diode:
@@ -895,7 +900,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         where: true
         params:
           from: "{{row_net}}"
-          to: "{{colrow}}"
+          to: "{{column_net}}"
         adjust:
           rotate: 180
           shift: [0, -9]
@@ -912,7 +917,7 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           shift: [38,9]
         params:
           reverse: true
-          symmetric: true
+          symmetric: false
           A: VCC
           B: VCC
           C: GND
@@ -982,6 +987,15 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
           side: F
           from: Bplus
           to: RAW
+      oled:
+        what: oled
+        adjust:
+          ref: matrix_far_top
+          shift: [14,-21.5]
+          rotate: 90
+        params:
+          SDA: P2
+          SCL: P3
 cases:              # cases - określa konfigurację plików .stl
   plateTRAY:
     - what: outline
