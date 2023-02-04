@@ -646,6 +646,18 @@ outlines:
         what: outline
         name: screw_holesTRAYMOUNT
         operation: subtract
+    plate_offset:
+      main:
+        what: outline
+        name: frame_case_default_offset
+      switches:
+        what: outline
+        name: switches_slots
+        operation: subtract
+      cut:
+        what: outline
+        name: promicro_platecut
+        operation: subtract
     plate_with_keycaps:
       main:
         what: outline
@@ -762,21 +774,11 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         adjust:
           rotate: 180
           shift: [0, -9]
-      mcu_l:
-        what: promicro
-        params:
-          orientation: up
+      mcu:
+        what: promicro_pretty
         adjust:
           ref: matrix_far_top
           shift: [20,-2]
-          rotate: 270
-      mcu_r:
-        what: promicro
-        params:
-          orientation: down
-        adjust:
-          ref: matrix_far_top
-          shift: [22.5,-3.25]
           rotate: 270
       trrs:
         what: trrs
@@ -897,21 +899,11 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         adjust:
           rotate: 180
           shift: [0, -9]
-      mcu_l:
-        what: promicro
-        params:
-          orientation: up
+      mcu:
+        what: promicro_pretty
         adjust:
           ref: matrix_far_top
           shift: [20,-2]
-          rotate: 270
-      mcu_r:
-        what: promicro
-        params:
-          orientation: down
-        adjust:
-          ref: matrix_far_top
-          shift: [22.5,-3.25]
           rotate: 270
       trrs:
         what: trrs
