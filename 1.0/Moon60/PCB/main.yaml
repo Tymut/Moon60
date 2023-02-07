@@ -707,6 +707,22 @@ outlines:
       top:
         what: outline
         name: circle_top
+    plate_without_keys:
+      main:
+        what: outline
+        name: frame_case_default_offset
+      cut:
+        what: outline
+        name: promicro_platecut
+        operation: subtract
+    top_frame_components_cut:
+      main:
+        what: outline
+        name: frame_case_default_offset
+      cut:
+        what: outline
+        name: plate_offset
+        operation: subtract
 pcbs:                 # pcbs - określa konfigurację która ma być przekonwertowana do programu KiCad
   sizing_help:
     outlines:
