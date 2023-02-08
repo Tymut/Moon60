@@ -738,6 +738,29 @@ pcbs:                 # pcbs - określa konfigurację która ma być przekonwert
         layer: Eco2.User
       mounting_holes:
         outline: mounting_holesTOPMOUNT
+  hotswap_cut:
+    outlines:
+      matrix:
+        outline: cutout
+    footprints:
+      choc_hotswap:
+          what: choc
+          where: true
+          adjust:
+            rotate: 180
+          params:
+            from: "{{row_net}}"
+            to: "{{column_net}}"
+            reverse: true
+            hotswap: true
+      mx_hotswap:
+        what: mx
+        where: true
+        params:
+          from: "{{row_net}}"
+          to: "{{column_net}}"
+          reverse: true
+          hotswap: true
   plateTRAY:
     outlines:
       matrix:
