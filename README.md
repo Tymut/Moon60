@@ -40,3 +40,5 @@ W przyszłości klawiatura będzie miała możliwość przypisania dowolnych kla
 - efektów graficznych
 
 Planujemy dalszy złożony rozwój projektu i liczymy na liczne rezultaty.
+
+<img src="1.0/PlakatyInformacyjne/BannerCOLORFULV2Banner.png">
