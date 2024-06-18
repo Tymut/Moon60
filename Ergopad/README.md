@@ -4,5 +4,3 @@
 - The data was collected thanks to the Ergopad program (https://pashutk.com/ergopad/).
 - The next step after averaging the results is to design the PCB layout and keyboard housing in the "Ergogen" generator - (https://github.com/ergogen/ergogen).
 - The biometric averaged result is located in the "Result" subfolder.
-
-## - Przemek Paciorek / Damian Pryszcz
