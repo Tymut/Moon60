@@ -9,6 +9,7 @@ Moon60 is is a split keyboard with 4x6 column staggered keys, 5 thumb keys and 1
 - 128x32 OLED
 - TRRS connection between sides
 - Optional tenting supported by M12 screws
+- Reversible PCB
 
 **Firmware:** https://github.com/Nx0dle/qmk_firmware
 
